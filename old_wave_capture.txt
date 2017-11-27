@@ -1,0 +1,81 @@
+/*// FSM has three states: armed active and wait
+// In active it stores 8 SB
+reg [15:0] curr_sample_in, prev_sample_in;
+wire [15:0] curr_sample_out, prev_sample_out;
+reg curr_state_in;
+wire curr_state_out;
+
+wire zero_crossing;
+assign zero_crossing = (prev_sample_out[15]&~curr_sample_out[15]);
+
+// Enable a flip flop to track both current samples and prev samples
+dffr #(16) curr_sample_tmr(
+    .clk(clk),.r(reset),.d(curr_sample_in),.q(curr_sample_out)
+);
+
+dffr #(16) prev_sample_tmr(
+    .clk(clk),.r(reset),.d(prev_sample_in),.q(prev_sample_out)
+);
+
+// Continually pick up new samples
+// Enable to track the state of the samples (FSM)
+always @(*) begin
+    if (reset) begin // If reset is hit, restore to default values
+        curr_sample_in = 16'b0; 
+        prev_sample_in = 16'b0;
+    end
+    else if (new_sample_ready) begin // If there is a new sample, set curr_sample_in to the new sample, and prev to the old curr
+        curr_sample_in = new_sample_in;
+        prev_sample_in = curr_sample_out;
+    end
+    else begin // else, iterate
+        curr_sample_in = curr_sample_out;
+        prev_sample_in = prev_sample_out;
+    end
+end
+
+assign write_sample = 8'd127 - new_sample_in[15:8]; // active state 
+assign write_address = {~read_index, counter};
+dffr sample_fsm(
+    .clk(clk),.r(reset),.d(curr_state_in),.q(curr_state_out)
+);
+
+wire write_did_end;
+assign write_did_end = ((curr_state_out) && (write_enable) && (counter == 8'd255)) ? 1'b1:1'b0;
+always @(*) begin
+    if (curr_state_out) begin // ACTIVE STATE
+        curr_state_in = (write_did_end)? 1'b0:1'b1; // if final sample: switch to wait (not armed??)
+    end
+    else begin // ARMED STATE
+		curr_state_in = (zero_crossing)? 1'b1:1'b0;  // If zero crossing is seen: switch to active.
+    end
+end
+
+// write outputs
+wire [7:0] counter;
+wire enable = (curr_state_out || (counter != 8'b0));
+counter cntr(.clk(clk),.reset(reset), .beat(new_sample_ready),.enable(enable),.count(counter));
+
+// wave capture FSM
+reg [2:0] write_enable_in;
+wire [2:0] write_enable_out;
+dffr #(.WIDTH(3)) enable_ff(.clk(clk),.r(reset),.d(write_enable_in),.q(write_enable_out));
+
+// BUG HERE
+always @(*) begin
+	if ((new_sample_ready) && (curr_state_out)) write_enable_in = 1'b1;
+	else if ((~new_sample_ready) && (~curr_state_out) && (~zero_crossing)) write_enable_in = 1'b1;
+	else if (write_enable_out == 3'b100) write_enable_in = 1'b0;
+	else if (write_enable_out) write_enable_in = write_enable_out + 1'b1; //will never get called
+	else write_enable_in = write_enable_out;
+end
+
+assign write_enable = (write_enable_out) ? 1'b1:1'b0; //should be called upon positive zero crossing
+
+// WAIT STATE
+wire flip_index;
+wait_state wait_state(.clk(clk),.reset(reset),.wave_display_idle(wave_display_idle),
+							 .active(curr_state_out), .flip_index(flip_index));
+
+dffre read_index_ff(.clk(clk),.r(reset),.en(flip_index),.d(~read_index),.q(read_index));
+*/
