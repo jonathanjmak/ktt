@@ -2,6 +2,8 @@
 `define QUAD_3_PIXEL_HIGH 11'b01011111111
 `define WHITE 24'hFFFFFF
 `define BLACK 24'h000000
+
+// Testing comments
 module wave_display (
     input clk,
     input reset,
