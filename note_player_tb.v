@@ -10,13 +10,11 @@ module note_player_tb();
     note_player np(
         .clk(clk),
         .reset(reset),
-
         .play_enable(play_enable),
         .note_to_load(note_to_load),
         .duration_to_load(duration_to_load),
         .load_new_note(load_new_note),
         .done_with_note(done_with_note),
-
         .beat(beat),
         .generate_next_sample(generate_next_sample),
         .sample_out(sample_out),

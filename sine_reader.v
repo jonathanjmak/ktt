@@ -5,7 +5,7 @@ module sine_reader(
     input reset,
     input [19:0] step_size,
     input generate_next,
-
+	 input done,
     output sample_ready,
     output wire [15:0] sample
 );
@@ -15,13 +15,16 @@ module sine_reader(
     wire [21:0] current_addr;
     wire [21:0] next_addr;
 
-    dffre #(22) sine_ff(.clk(clk), .r(reset), .en(generate_next), .d(next_addr), .q(current_addr));
+    dffre #(22) sine_ff(.clk(clk), .r(reset|done), .en(generate_next), .d(next_addr), .q(current_addr));
 
 	 assign  next_addr = current_addr+step_size;
 
-   // wait one cycle before updating sample_ready after the sine_rom
+	 wire ready;
+    // wait one cycle before updating sample_ready after the sine_rom
     note_timer note_tmr(.clk(clk), .reset(reset), .update_note_length(generate_next), .note_length(6'd2), 
-                        .pause(1'b0), .play(clk), .note_did_end(sample_ready)); // note length is 2
+                        .pause(1'b0), .beat(clk), .note_did_end(ready)); // note length is 2
+	 
+	 dffr ready_ff(.clk(clk),.r(reset),.d(ready),.q(sample_ready));
 
     wire [15:0] sine_rom_output;
 	 

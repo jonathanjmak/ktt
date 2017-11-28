@@ -4,7 +4,7 @@ module note_timer(
     input update_note_length,
     input [5:0] note_length,
     input pause,
-    input play,
+    input beat,
     output note_did_end
 );
 
@@ -16,7 +16,7 @@ module note_timer(
 	always @(*) begin
 		if (reset) next = 0;
 		else if (update_note_length) next = note_length;
-		else if (play) next = (counter==6'b0) ? 6'b0 : (counter-1);
+		else if (beat) next = (counter==6'b0) ? 6'b0 : (counter-1);
 		else if (pause) next = counter;
 		else next = counter; // do nothing as default
 	end

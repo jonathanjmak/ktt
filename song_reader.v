@@ -46,7 +46,7 @@ module song_reader(
 		.update_note_length(update_duration),
 		.note_length(tmr_duration),
 		.pause(~play),
-		.play(beat),
+		.beat(beat),
 		.note_did_end(timer_done)
 	 );
 	 assign tmr_duration = reset? 6'b0:duration;
