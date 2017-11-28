@@ -1,0 +1,29 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Z:/groups/01/Final_Project/sine_reader_tb_isim_beh.exe" -prj "Z:/groups/01/Final_Project/sine_reader_tb_beh.prj" "work.sine_reader_tb" "work.glbl" 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "Z:/groups/01/Final_Project/ff_lib.v" into library work
+Analyzing Verilog file "Z:/groups/01/Final_Project/sine_rom.v" into library work
+Analyzing Verilog file "Z:/groups/01/Final_Project/note_timer.v" into library work
+Analyzing Verilog file "Z:/groups/01/Final_Project/sine_reader.v" into library work
+Analyzing Verilog file "Z:/groups/01/Final_Project/sine_reader_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "Z:/groups/01/Final_Project/sine_reader_tb.v" Line 7: Port done is not connected to this instance
+Completed static elaboration
+Fuse Memory Usage: 105544 KB
+Fuse CPU Usage: 342 ms
+Compiling module dffre(WIDTH=22)
+Compiling module dffr(WIDTH=6)
+Compiling module note_timer
+Compiling module dffr
+Compiling module sine_rom
+Compiling module sine_reader
+Compiling module sine_reader_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 8 Verilog Units
+Built simulation executable Z:/groups/01/Final_Project/sine_reader_tb_isim_beh.exe
+Fuse Memory Usage: 134200 KB
+Fuse CPU Usage: 733 ms
