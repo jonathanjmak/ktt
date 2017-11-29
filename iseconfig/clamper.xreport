@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-28T11:42:31</DateModified>
+  <DateModified>2017-11-28T21:58:30</DateModified>
   <ModuleName>clamper</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/iseconfig/clamper.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/</ImplementationReportsDirectory>
+  <SavedFilePath>Z:/groups/01/Final_Project/iseconfig/clamper.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>Z:/groups/01/Final_Project\</ImplementationReportsDirectory>
   <DateInitialized>2017-11-28T10:25:31</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

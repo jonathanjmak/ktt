@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"Z:/groups/01/Final_Project/sine_reader_tb.v" Line 7: Port <arg fmt="%s" index="1">done</arg> is not connected to this instance
-</msg>
-
 </messages>
 

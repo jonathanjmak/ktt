@@ -34,10 +34,10 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="music_player.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="music_player.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="note_player_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="note_player_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="note_player_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sine_reader_tb_beh.prj"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="note_player_tb_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="sine_reader_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="sine_reader_tb_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="song_reader_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="song_reader_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="vga_generator.sym" xil_pn:origination="imported"/>
@@ -50,13 +50,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1511897870" xil_pn:in_ck="-7518618003515699828" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1511897869">
+    <transform xil_pn:end_ts="1511936593" xil_pn:in_ck="-7518618003515699828" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1511936593">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ADAU1761_interface.vhd"/>
       <outfile xil_pn:name="ac97_if.v"/>
       <outfile xil_pn:name="ac97_if_isim.v"/>
@@ -116,11 +112,11 @@
       <outfile xil_pn:name="wave_display_top.v"/>
       <outfile xil_pn:name="zedboard_hdmi.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1511898910" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2321528837236613997" xil_pn:start_ts="1511898910">
+    <transform xil_pn:end_ts="1511935118" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6699776445339624082" xil_pn:start_ts="1511935118">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1511898910" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2333866030964411023" xil_pn:start_ts="1511898910">
+    <transform xil_pn:end_ts="1511935118" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1978242726846881678" xil_pn:start_ts="1511935118">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -128,14 +124,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1511897870" xil_pn:in_ck="-7518618003515699828" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1511897870">
+    <transform xil_pn:end_ts="1511936593" xil_pn:in_ck="-7518618003515699828" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1511936593">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ADAU1761_interface.vhd"/>
       <outfile xil_pn:name="ac97_if.v"/>
       <outfile xil_pn:name="ac97_if_isim.v"/>
@@ -195,32 +186,26 @@
       <outfile xil_pn:name="wave_display_top.v"/>
       <outfile xil_pn:name="zedboard_hdmi.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1511898915" xil_pn:in_ck="-7518618003515699828" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3182460827957778972" xil_pn:start_ts="1511898910">
+    <transform xil_pn:end_ts="1511936600" xil_pn:in_ck="-7518618003515699828" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8686088226160454270" xil_pn:start_ts="1511936593">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="sine_reader_tb_beh.prj"/>
-      <outfile xil_pn:name="sine_reader_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="note_player_tb_beh.prj"/>
+      <outfile xil_pn:name="note_player_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1511898916" xil_pn:in_ck="2084567333412564232" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4979942999464197407" xil_pn:start_ts="1511898915">
+    <transform xil_pn:end_ts="1511936600" xil_pn:in_ck="2084567333412564232" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3885866150797070815" xil_pn:start_ts="1511936600">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="sine_reader_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="note_player_tb_isim_beh.wdb"/>
     </transform>
   </transforms>
 

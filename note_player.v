@@ -12,38 +12,37 @@ module note_player(
     output new_sample_ready  // Tells the codec when we've got a sample
 );
 
-	wire done;
+	wire done; //what does this really represent
+	reg [5:0] next_note, next_duration;
+	wire [5:0] curr_note, curr_duration;
+	wire load;
     // note duration so far
     note_timer note_tmr(
 		.clk(clk), 
 		.reset(reset),
-		.update_note_length(load),
-		.note_length(curr_duration),
+		.update_note_length(load), //.update_note_length(load)
+		.note_length(curr_duration), //.note_length(curr_duration),
 		.pause(~play_enable),
 		.beat(beat),
-		.note_did_end(done)
+		.note_did_end(done_with_note) //.note_did_end(done)
 	);
 	
-	wire [15:0] new_sample, prev_sample;
-	wire next_sample_ready;
+	wire [15:0] curr_sample, prev_sample;
+	wire next_sample_ready; //tells us next sample is loaded in, different from new_sample_ready. New_sample_ready will be output of next_sample_ready
 	
-	wire zero_crossing = ((prev_sample[15]!=new_sample[15]));
+	wire zero_crossing = ((prev_sample[15]!=curr_sample[15]));
 	
 	reg next_done;
 
 	always @(*) begin
-		if ((done & (zero_crossing | (prev_sample == 16'b0)))) next_done = 1;
+		if ((done_with_note & (zero_crossing | (prev_sample == 16'b0)))) next_done = 1; //done & zero
 		else if(~done) next_done = 0;
 		else next_done = done_with_note;
 	end
 
-	dffr #(16) sample_ff(.clk(clk), .r(reset), .d(new_sample), .q(prev_sample));
+	dffr #(16) sample_ff(.clk(clk), .r(reset), .d(curr_sample), .q(prev_sample));
 	dffr sample_ready_ff(.clk(clk), .r(reset), .d(next_sample_ready), .q(new_sample_ready));
 	dffr note_done_ff(.clk(clk), .r(reset), .d(next_done), .q(done_with_note));
-	
-	reg [5:0] next_note, next_duration;
-	wire [5:0] curr_note, curr_duration;
-	wire load;
 
 	dffr #(6) note_ff(.clk(clk), .r(reset), .d(next_note), .q(curr_note));
 	dffr #(6) duration_ff(.clk(clk), .r(reset), .d(next_duration), .q(curr_duration));
@@ -74,7 +73,7 @@ module note_player(
 		.step_size(step_size),
 		.generate_next(generate_next_sample),
 		.sample_ready(next_sample_ready),
-		.sample(new_sample),
+		.sample(curr_sample),
 		.done((done & (zero_crossing | (prev_sample == 16'b0))))
 	);
 	

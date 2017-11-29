@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Z:/groups/01/Final_Project/sine_reader_tb_isim_beh.exe" -prj "Z:/groups/01/Final_Project/sine_reader_tb_beh.prj" "work.sine_reader_tb" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Z:/groups/01/Final_Project/note_player_tb_isim_beh.exe" -prj "Z:/groups/01/Final_Project/note_player_tb_beh.prj" "work.note_player_tb" "work.glbl" 
