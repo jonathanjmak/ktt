@@ -65,11 +65,10 @@ initial begin
 	reset = 1'b0;
 	
 	//Input a note and let it finish
-		#2
 		note = 6'd37;
 		duration = 6'd4;
 		new_note = 1'b1;
-		#2
+		#4
 		new_note = 1'b0;
 		
 		#500

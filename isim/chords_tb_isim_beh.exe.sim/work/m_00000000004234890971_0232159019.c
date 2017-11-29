@@ -24,6 +24,7 @@
 static const char *ng0 = "//afs/ir/class/ee108/groups/01/Final_Project/chords.v";
 static unsigned int ng1[] = {0U, 0U};
 static int ng2[] = {2, 0};
+static unsigned int ng3[] = {4U, 0U};
 
 
 
@@ -192,7 +193,7 @@ LAB10:    xsi_set_current_line(29, ng0);
         goto LAB12;
 
 LAB13:    xsi_set_current_line(30, ng0);
-    t2 = ((char*)((ng1)));
+    t2 = ((char*)((ng3)));
     t3 = (t0 + 2484);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 3);
 

@@ -27,7 +27,7 @@ module note_player(
 		.note_did_end(timer_done) //.note_did_end(done)
 	);
 	
-	wire [15:0] curr_sample, prev_sample;
+	wire [15:0] curr_sample, prev_sample; //these are all 0s
 	wire next_sample_ready; //tells us next sample is loaded in, different from new_sample_ready. New_sample_ready will be output of next_sample_ready
 	
 	wire zero_crossing = ((prev_sample[15]!=curr_sample[15]));

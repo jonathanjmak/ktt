@@ -27,7 +27,7 @@ module chords(
 		if (player_one_done) next_load_new_note = {new_note, 1'b0, 1'b0};
 		else if (player_two_done) next_load_new_note = {1'b0, new_note, 1'b0};
 		else if (player_three_done) next_load_new_note = {1'b0, 1'b0, new_note};
-		else next_load_new_note = 3'b0;
+		else next_load_new_note = 3'b000;
 	end
 	
 	always @(*) begin
@@ -48,7 +48,7 @@ module chords(
         .play_enable(play),
         .note_to_load(note),
         .duration_to_load(duration),
-        .load_new_note(new_note), // load .load_new_note(load_new_note[2]), // load
+        .load_new_note(load_new_note[2]), // load .load_new_note(load_new_note[2]), // load
         .done_with_note(player_one_done),
         .beat(beat),
         .generate_next_sample(generate_next_sample),
@@ -62,7 +62,7 @@ module chords(
         .play_enable(play),
         .note_to_load(note),
         .duration_to_load(duration),
-        .load_new_note(new_note), // load .load_new_note(load_new_note[1])
+        .load_new_note(load_new_note[1]), // load .load_new_note(load_new_note[1])
         .done_with_note(player_two_done),
         .beat(beat),
         .generate_next_sample(generate_next_sample),
@@ -76,7 +76,7 @@ module chords(
         .play_enable(play),
         .note_to_load(note),
         .duration_to_load(duration),
-        .load_new_note(new_note), // load .load_new_note(load_new_note[0])
+        .load_new_note(load_new_note[0]), // load .load_new_note(load_new_note[0])
         .done_with_note(player_three_done),
         .beat(beat),
         .generate_next_sample(generate_next_sample),
