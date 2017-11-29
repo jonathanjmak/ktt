@@ -14,7 +14,7 @@ module song_rom (
 	always @(posedge clk)				
 		dout = memory[addr];			
 					
-	assign memory[	  0	] =	{1'b0,'6'd49, 6'd12, 3'd0};	// Note: 5A
+	assign memory[	  0	] =	{1'b0, 6'd49, 6'd12, 3'd0};	// Note: 5A
 	assign memory[	  1	] =	{1'b0, 6'd1, 6'd8, 3'd0};	// Note: 1A
 	assign memory[	  2	] =	{1'b0, 6'd51, 6'd12, 3'd0};	// Note: 5B
 	assign memory[	  3	] =	{1'b0, 6'd3, 6'd8, 3'd0};	// Note: 1B
