@@ -9,9 +9,10 @@ module song_reader(
     input clk,
     input reset,
     input play,
-    input [1:0] song,
-    output song_done,
 	 input player_ready,
+    input [1:0] song,
+	 input beat,
+    output song_done,
     output wire [5:0] note,
     output [5:0] duration,
     output new_note
@@ -31,14 +32,13 @@ module song_reader(
 	 reg [2:0] next_state;
 	 dffr #(3) state_ff(.clk(clk), .r(reset), .d(next_state), .q(state));
 	 
-	 
 	 wire [15:0] rom_output;
 	 song_rom song_rom(.clk(clk), .addr(address), .dout(rom_output)); // update ROM data to be 16 bits
 	 	 
 	 wire advance;
 	 wire [5:0] tmr_duration;
 	 wire timer_done;
-	 reg update_duration;
+	 wire update_duration;
 	 
 	 note_timer note_tmr(
 		.clk(clk), 

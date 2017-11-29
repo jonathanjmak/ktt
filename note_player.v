@@ -12,7 +12,7 @@ module note_player(
     output new_sample_ready  // Tells the codec when we've got a sample
 );
 
-	wire done; //what does this really represent
+	wire timer_done; //timer done
 	reg [5:0] next_note, next_duration;
 	wire [5:0] curr_note, curr_duration;
 	wire load;
@@ -24,7 +24,7 @@ module note_player(
 		.note_length(curr_duration), //.note_length(curr_duration),
 		.pause(~play_enable),
 		.beat(beat),
-		.note_did_end(done_with_note) //.note_did_end(done)
+		.note_did_end(timer_done) //.note_did_end(done)
 	);
 	
 	wire [15:0] curr_sample, prev_sample;
@@ -34,9 +34,11 @@ module note_player(
 	
 	reg next_done;
 
+	wire done_zero_cross = done_with_note & (zero_crossing | (prev_sample == 16'b0));
+
 	always @(*) begin
-		if ((done_with_note & (zero_crossing | (prev_sample == 16'b0)))) next_done = 1; //done & zero
-		else if(~done) next_done = 0;
+		if (done_zero_cross) next_done = 1'b1; //done & zero
+		else if(~timer_done) next_done = 1'b0;
 		else next_done = done_with_note;
 	end
 
@@ -74,7 +76,7 @@ module note_player(
 		.generate_next(generate_next_sample),
 		.sample_ready(next_sample_ready),
 		.sample(curr_sample),
-		.done((done & (zero_crossing | (prev_sample == 16'b0))))
+		.done((timer_done & (zero_crossing | (prev_sample == 16'b0))))
 	);
 	
 	assign sample_out = prev_sample;

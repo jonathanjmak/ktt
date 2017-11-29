@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "Z:/groups/01/Final_Project/final_top.xst" -ofn "Z:/groups/01/Final_Project/final_top.syr" 
+xst -intstyle ise -ifn "Z:/groups/01/Final_Project/final_top.xst" -ofn "Z:/groups/01/Final_Project/final_top.syr" 
+xst -intstyle ise -ifn "Z:/groups/01/Final_Project/final_top.xst" -ofn "Z:/groups/01/Final_Project/final_top.syr" 
+xst -intstyle ise -ifn "Z:/groups/01/Final_Project/final_top.xst" -ofn "Z:/groups/01/Final_Project/final_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z020-clg484-3 final_top.ngc final_top.ngd  
+map -intstyle ise -p xc7z020-clg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o final_top_map.ncd final_top.ngd final_top.pcf 
+par -w -intstyle ise -ol high -mt off final_top_map.ncd final_top.ncd final_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_top.twx final_top.ncd -o final_top.twr final_top.pcf 
+bitgen -intstyle ise -f final_top.ut final_top.ncd 

@@ -3,8 +3,12 @@
  */
 module fake_sample_ram (
     input clk,
-    input [8:0] addr,
+    input [7:0] addr,
     output reg [7:0] dout
 );
+
+    always @(posedge clk)
+        dout = addr;
+
 endmodule
 

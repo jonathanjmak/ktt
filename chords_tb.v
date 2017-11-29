@@ -58,18 +58,18 @@ initial begin
 	note = 6'b0;
 	duration = 6'b0;
 	new_note = 1'b0;
-	//gen_next = 1'b0;
 	
 	//Reset the system
 	reset = 1'b1;
-	#4
+	#2
 	reset = 1'b0;
 	
 	//Input a note and let it finish
+		#2
 		note = 6'd37;
 		duration = 6'd4;
 		new_note = 1'b1;
-		#4
+		#2
 		new_note = 1'b0;
 		
 		#500

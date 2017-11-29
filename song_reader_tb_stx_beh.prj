@@ -1,0 +1,6 @@
+verilog isim_temp "ff_lib.v"
+verilog isim_temp "song_rom.v"
+verilog isim_temp "note_timer.v"
+verilog isim_temp "song_reader.v"
+verilog isim_temp "song_reader_tb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

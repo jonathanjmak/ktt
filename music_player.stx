@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.15 secs
  
 --> Parameter xsthdpdir set to Z:/groups/01/Final_Project/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: music_player.prj
 
@@ -47,20 +47,22 @@ Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\sine_rom.v"
 Parsing module <sine_rom>.
 Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\note_timer.v" into library work
 Parsing module <note_timer>.
-Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\song_rom.v" into library work
-Parsing module <song_rom>.
 Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\sine_reader.v" into library work
 Parsing module <sine_reader>.
 Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\frequency_rom.v" into library work
 Parsing module <frequency_rom>.
-Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\song_reader.v" into library work
-Parsing module <song_reader>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\song_rom.v" into library work
+Parsing module <song_rom>.
 Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\note_player.v" into library work
 Parsing module <note_player>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\song_reader.v" into library work
+Parsing module <song_reader>.
 Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\mcu.v" into library work
 Parsing module <mcu>.
 Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\codec_conditioner.v" into library work
 Parsing module <codec_conditioner>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\chords.v" into library work
+Parsing module <chords>.
 Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\beat_generator.v" into library work
 Parsing module <beat_generator>.
 Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\music_player.v" into library work
@@ -68,11 +70,11 @@ Parsing module <music_player>.
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.42 secs
+Total CPU time to Xst completion: 5.36 secs
  
 --> 
 
-Total memory usage is 161768 kilobytes
+Total memory usage is 161832 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

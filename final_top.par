@@ -1,0 +1,169 @@
+Release 14.7 par P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+RM128-8::  Wed Nov 29 10:41:59 2017
+
+par -w -intstyle ise -ol high -mt off final_top_map.ncd final_top.ncd
+final_top.pcf 
+
+
+Constraints file: final_top.pcf.
+Loading device for application Rf_Device from file '7z020.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "final_top" is an NCD, version 3.2, device xc7z020, package clg484, speed -3
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRELIMINARY 1.08 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           3 out of 32      9%
+   Number of DSP48E1s                        6 out of 220     2%
+   Number of External IOBs                  55 out of 200    27%
+      Number of LOCed IOBs                   0 out of 55      0%
+
+   Number of MMCME2_ADVs                     1 out of 4      25%
+   Number of OLOGICE2s                      10 out of 200     5%
+   Number of PLLE2_ADVs                      1 out of 4      25%
+   Number of RAMB18E1s                       6 out of 280     2%
+   Number of Slices                        253 out of 13300   1%
+   Number of Slice Registers               504 out of 106400  1%
+      Number used as Flip Flops            504
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                    620 out of 53200   1%
+   Number of Slice LUT-Flip Flop pairs     670 out of 53200   1%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 19 secs 
+Finished initial Timing Analysis.  REAL time: 19 secs 
+
+Starting Router
+
+
+Phase  1  : 4834 unrouted;      REAL time: 21 secs 
+
+Phase  2  : 3089 unrouted;      REAL time: 21 secs 
+
+Phase  3  : 740 unrouted;      REAL time: 23 secs 
+
+Phase  4  : 740 unrouted; (Par is working to improve performance)     REAL time: 28 secs 
+
+Updating file: final_top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 29 secs 
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 29 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 29 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 29 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 30 secs 
+Total REAL time to Router completion: 30 secs 
+Total CPU time to Router completion: 29 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|adau1761_codec/clk_4 |              |      |      |            |             |
+|                   8 | BUFGCTRL_X0Y1| No   |   41 |  0.115     |  1.441      |
++---------------------+--------------+------+------+------------+-------------+
+|   clk_100_IBUF_BUFG | BUFGCTRL_X0Y0| No   |   73 |  0.099     |  1.410      |
++---------------------+--------------+------+------+------------+-------------+
+|adau1761_codec/codec |              |      |      |            |             |
+|_clock_gen/clkfbout_ |              |      |      |            |             |
+|                 buf | BUFGCTRL_X0Y2| No   |    1 |  0.000     |  1.389      |
++---------------------+--------------+------+------+------------+-------------+
+|            hdmi/clk |         Local|      |   82 |  0.625     |  2.432      |
++---------------------+--------------+------+------+------------+-------------+
+|        clk_100_IBUF |         Local|      |    5 |  0.014     |  1.027      |
++---------------------+--------------+------+------+------------+-------------+
+|          hdmi/clk90 |         Local|      |    1 |  0.000     |  2.315      |
++---------------------+--------------+------+------+------------+-------------+
+|          hdmi/clkfb |         Local|      |    1 |  0.000     |  0.011      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net hdm | SETUP       |         N/A|     3.245ns|     N/A|           0
+  i/clk                                     | HOLD        |     0.200ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ada | SETUP       |         N/A|     4.497ns|     N/A|           0
+  u1761_codec/clk_48                        | HOLD        |     0.175ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     4.307ns|     N/A|           0
+  _100_IBUF_BUFG                            | HOLD        |     0.095ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 33 secs 
+Total CPU time to PAR completion: 31 secs 
+
+Peak Memory Usage:  463 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file final_top.ncd
+
+
+
+PAR done!

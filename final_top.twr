@@ -1,0 +1,127 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml final_top.twx final_top.ncd -o final_top.twr final_top.pcf
+
+Design file:              final_top.ncd
+Physical constraint file: final_top.pcf
+Device,package,speed:     xc7z020,clg484,C,-3 (PRELIMINARY 1.08 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk_100
+------------+------------+------------+------------+------------+---------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                     | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)    | Phase  |
+------------+------------+------------+------------+------------+---------------------+--------+
+AC_GPIO2    |    3.219(R)|      SLOW  |   -1.520(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+AC_GPIO3    |    4.353(R)|      SLOW  |   -1.552(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+AC_SDA      |    3.931(R)|      SLOW  |   -1.920(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+btn_right   |   -0.381(R)|      FAST  |    2.501(R)|      SLOW  |clk_100_IBUF_BUFG    |   0.000|
+btn_up      |    1.539(R)|      SLOW  |    2.246(R)|      SLOW  |clk_100_IBUF_BUFG    |   0.000|
+            |    2.184(R)|      SLOW  |   -0.742(R)|      SLOW  |hdmi/clk             |   0.000|
+------------+------------+------------+------------+------------+---------------------+--------+
+
+Clock clk_100 to Pad
+------------+-----------------+------------+-----------------+------------+---------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                     | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)    | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------+--------+
+AC_GPIO0    |         3.416(R)|      SLOW  |         1.255(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+AC_MCLK     |         3.112(R)|      SLOW  |         1.057(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+AC_SCK      |         3.416(R)|      SLOW  |         1.277(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+AC_SDA      |         3.640(R)|      SLOW  |         1.300(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+HDMI_SCL    |         9.529(R)|      SLOW  |         3.886(R)|      FAST  |hdmi/clk             |   0.000|
+HDMI_SDA    |         8.434(R)|      SLOW  |         3.367(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_B<0>    |         9.026(R)|      SLOW  |         3.954(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_B<1>    |         9.136(R)|      SLOW  |         4.049(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_B<2>    |         9.387(R)|      SLOW  |         4.176(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_B<3>    |         9.227(R)|      SLOW  |         4.085(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_G<0>    |         9.516(R)|      SLOW  |         4.257(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_G<1>    |         9.518(R)|      SLOW  |         4.266(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_G<2>    |         9.608(R)|      SLOW  |         4.311(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_G<3>    |         9.423(R)|      SLOW  |         4.207(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_HS      |         8.523(R)|      SLOW  |         3.612(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_R<0>    |         8.351(R)|      SLOW  |         3.570(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_R<1>    |         8.983(R)|      SLOW  |         3.940(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_R<2>    |         8.888(R)|      SLOW  |         3.890(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_R<3>    |         9.221(R)|      SLOW  |         4.090(R)|      FAST  |hdmi/clk             |   0.000|
+VGA_VS      |         8.582(R)|      SLOW  |         3.630(R)|      FAST  |hdmi/clk             |   0.000|
+hdmi_clk    |         6.890(R)|      SLOW  |         2.982(R)|      FAST  |hdmi/clk90           |   0.000|
+            |         6.890(F)|      SLOW  |         2.982(F)|      FAST  |hdmi/clk90           |   0.000|
+hdmi_d<8>   |         7.023(R)|      SLOW  |         3.053(R)|      FAST  |hdmi/clk             |   0.000|
+            |         7.023(F)|      SLOW  |         3.053(F)|      FAST  |hdmi/clk             |   0.000|
+hdmi_d<9>   |         6.895(R)|      SLOW  |         2.986(R)|      FAST  |hdmi/clk             |   0.000|
+            |         6.895(F)|      SLOW  |         2.986(F)|      FAST  |hdmi/clk             |   0.000|
+hdmi_d<10>  |         6.910(R)|      SLOW  |         3.003(R)|      FAST  |hdmi/clk             |   0.000|
+            |         6.910(F)|      SLOW  |         3.003(F)|      FAST  |hdmi/clk             |   0.000|
+hdmi_d<11>  |         6.867(R)|      SLOW  |         2.959(R)|      FAST  |hdmi/clk             |   0.000|
+            |         6.867(F)|      SLOW  |         2.959(F)|      FAST  |hdmi/clk             |   0.000|
+hdmi_d<12>  |         6.882(R)|      SLOW  |         2.976(R)|      FAST  |hdmi/clk             |   0.000|
+            |         6.882(F)|      SLOW  |         2.976(F)|      FAST  |hdmi/clk             |   0.000|
+hdmi_d<13>  |         7.020(R)|      SLOW  |         3.052(R)|      FAST  |hdmi/clk             |   0.000|
+            |         7.020(F)|      SLOW  |         3.052(F)|      FAST  |hdmi/clk             |   0.000|
+hdmi_d<14>  |         7.002(R)|      SLOW  |         3.035(R)|      FAST  |hdmi/clk             |   0.000|
+            |         7.002(F)|      SLOW  |         3.035(F)|      FAST  |hdmi/clk             |   0.000|
+hdmi_d<15>  |         6.910(R)|      SLOW  |         3.004(R)|      FAST  |hdmi/clk             |   0.000|
+            |         6.910(F)|      SLOW  |         3.004(F)|      FAST  |hdmi/clk             |   0.000|
+hdmi_de     |         7.006(R)|      SLOW  |         3.038(R)|      FAST  |hdmi/clk             |   0.000|
+            |         7.006(F)|      SLOW  |         3.038(F)|      FAST  |hdmi/clk             |   0.000|
+hdmi_hsync  |         7.721(R)|      SLOW  |         3.132(R)|      FAST  |hdmi/clk             |   0.000|
+hdmi_vsync  |         7.943(R)|      SLOW  |         3.289(R)|      FAST  |hdmi/clk             |   0.000|
+leds_l<0>   |         7.909(R)|      SLOW  |         3.274(R)|      FAST  |clk_100_IBUF_BUFG    |   0.000|
+leds_l<1>   |         7.822(R)|      SLOW  |         3.173(R)|      FAST  |clk_100_IBUF_BUFG    |   0.000|
+leds_l<2>   |         7.831(R)|      SLOW  |         3.191(R)|      FAST  |clk_100_IBUF_BUFG    |   0.000|
+leds_l<3>   |         7.807(R)|      SLOW  |         3.159(R)|      FAST  |clk_100_IBUF_BUFG    |   0.000|
+leds_r<0>   |         5.058(R)|      SLOW  |         2.128(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+            |         8.896(R)|      SLOW  |         3.606(R)|      FAST  |clk_100_IBUF_BUFG    |   0.000|
+leds_r<1>   |         4.948(R)|      SLOW  |         2.065(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+            |         8.898(R)|      SLOW  |         3.638(R)|      FAST  |clk_100_IBUF_BUFG    |   0.000|
+leds_r<2>   |         4.751(R)|      SLOW  |         1.976(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+            |         9.002(R)|      SLOW  |         3.643(R)|      FAST  |clk_100_IBUF_BUFG    |   0.000|
+leds_r<3>   |         5.082(R)|      SLOW  |         2.131(R)|      FAST  |adau1761_codec/clk_48|   0.000|
+            |         9.072(R)|      SLOW  |         3.729(R)|      FAST  |clk_100_IBUF_BUFG    |   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------+--------+
+
+Clock to Setup on destination clock clk_100
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100        |    7.496|    0.397|         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Wed Nov 29 10:42:56 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 392 MB
+
+
+

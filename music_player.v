@@ -65,46 +65,30 @@ module music_player(
     wire new_note;
     wire note_done;
 	 wire player_ready;
-    song_reader song_reader(
-        .clk(clk),
-        .reset(reset | reset_player),
-        .play(play),
-        .song(current_song),
-        .song_done(song_done),
-		  .player_ready(player_ready),
-        .note(note_to_play),
-        .duration(duration_for_note),
-        .new_note(new_note),
-    );
+	 wire beat;
 
-//   
-//  ****************************************************************************
-//      Note Player
-//  ****************************************************************************
-//  
-    wire beat;
-    wire generate_next_sample;
-    wire [15:0] note_sample;
-    wire note_sample_ready;
-    note_player note_player(
-        .clk(clk),
-        .reset(reset),
-        .play_enable(play),
-        .note_to_load(note_to_play),
-        .duration_to_load(duration_for_note),
-        .load_new_note(new_note),
-        .done_with_note(note_done),
-        .beat(beat),
-        .generate_next_sample(generate_next_sample),
-        .sample_out(note_sample),
-        .new_sample_ready(note_sample_ready)
-    );
-	 
+	song_reader song_reader(
+		.clk(clk),
+		.reset(reset | reset_player),
+		.play(play),
+		.player_ready(player_ready),
+		.song(current_song),
+		.beat(beat),
+		.song_done(song_done),
+		.note(note_to_play),
+		.duration(duration_for_note),
+		.new_note(new_note)
+   );
+
 //
 //  ****************************************************************************
 //      Chords Module
 //  ****************************************************************************
 //
+		wire generate_next_sample;
+		wire [15:0] note_sample;
+		wire note_sample_ready;
+	 
 		chords chord_module(	
 			.clk(clk), 
 			.reset(reset|reset_player),
