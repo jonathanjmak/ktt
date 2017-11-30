@@ -1,0 +1,29 @@
+Command line:
+   sine_reader_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53398
+
+Thu Nov 30 12:55:28 2017
+
+
+ Elaboration Time: 0.124801 sec
+
+ Current Memory Usage: 796.058 Meg
+
+ Total Signals          : 50
+ Total Nets             : 16539
+ Total Signal Drivers   : 1045
+ Total Blocks           : 9
+ Total Primitive Blocks : 6
+ Total Processes        : 1056
+ Total Traceable Variables  : 33
+ Total Scalar Nets and Variables : 16863
+Total Line Count : 1101
+
+ Total Simulation Time: 0.171601 sec
+
+ Current Memory Usage: 796.058 Meg
+
+Thu Nov 30 12:55:34 2017
+

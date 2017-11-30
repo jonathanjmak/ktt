@@ -24,7 +24,6 @@
 static const char *ng0 = "//afs/ir/class/ee108/groups/01/Final_Project/chords.v";
 static unsigned int ng1[] = {0U, 0U};
 static int ng2[] = {2, 0};
-static unsigned int ng3[] = {4U, 0U};
 
 
 
@@ -193,7 +192,7 @@ LAB10:    xsi_set_current_line(29, ng0);
         goto LAB12;
 
 LAB13:    xsi_set_current_line(30, ng0);
-    t2 = ((char*)((ng3)));
+    t2 = ((char*)((ng1)));
     t3 = (t0 + 2484);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 3);
 
@@ -527,7 +526,7 @@ LAB16:    t87 = *((unsigned int *)t4);
     if (t94 > 0)
         goto LAB18;
 
-LAB19:    xsi_set_current_line(37, ng0);
+LAB19:    xsi_set_current_line(36, ng0);
     t2 = (t0 + 1796U);
     t3 = *((char **)t2);
     t2 = (t0 + 1888U);
@@ -664,7 +663,7 @@ LAB40:    t176 = *((unsigned int *)t4);
     if (t183 > 0)
         goto LAB42;
 
-LAB43:    xsi_set_current_line(41, ng0);
+LAB43:    xsi_set_current_line(39, ng0);
     t2 = (t0 + 2164U);
     t3 = *((char **)t2);
     memset(t4, 0, 8);
@@ -905,7 +904,7 @@ LAB41:    t172 = *((unsigned int *)t4);
     *((unsigned int *)t168) = (t174 | t175);
     goto LAB40;
 
-LAB42:    xsi_set_current_line(38, ng0);
+LAB42:    xsi_set_current_line(37, ng0);
     t185 = (t0 + 2164U);
     t186 = *((char **)t185);
     memset(t184, 0, 8);
@@ -927,7 +926,7 @@ LAB42:    xsi_set_current_line(38, ng0);
 
 }
 
-static void Cont_87_3(char *t0)
+static void Cont_83_3(char *t0)
 {
     char t5[8];
     char t34[8];
@@ -1011,7 +1010,7 @@ LAB0:    t1 = (t0 + 3440U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(87, ng0);
+LAB2:    xsi_set_current_line(83, ng0);
     t2 = (t0 + 1796U);
     t3 = *((char **)t2);
     t2 = (t0 + 1888U);
@@ -1122,7 +1121,7 @@ LAB7:    t45 = *((unsigned int *)t34);
 
 extern void work_m_00000000004234890971_0232159019_init()
 {
-	static char *pe[] = {(void *)Cont_21_0,(void *)Always_26_1,(void *)Always_33_2,(void *)Cont_87_3};
+	static char *pe[] = {(void *)Cont_21_0,(void *)Always_26_1,(void *)Always_33_2,(void *)Cont_83_3};
 	xsi_register_didat("work_m_00000000004234890971_0232159019", "isim/chords_tb_isim_beh.exe.sim/work/m_00000000004234890971_0232159019.didat");
 	xsi_register_executes(pe);
 }

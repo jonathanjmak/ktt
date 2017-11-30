@@ -1,4 +1,4 @@
-Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Z:/groups/01/Final_Project/note_player_tb_isim_beh.exe" -prj "Z:/groups/01/Final_Project/note_player_tb_beh.prj" "note_player_tb" "work.glbl" 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o Z:/groups/01/Final_Project/chords_tb_isim_beh.exe -prj Z:/groups/01/Final_Project/chords_tb_beh.prj work.chords_tb work.glbl 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
@@ -9,13 +9,15 @@ Analyzing Verilog file "Z:/groups/01/Final_Project/note_timer.v" into library wo
 Analyzing Verilog file "Z:/groups/01/Final_Project/sine_reader.v" into library work
 Analyzing Verilog file "Z:/groups/01/Final_Project/frequency_rom.v" into library work
 Analyzing Verilog file "Z:/groups/01/Final_Project/note_player.v" into library work
-Analyzing Verilog file "Z:/groups/01/Final_Project/beat_generator.v" into library work
-Analyzing Verilog file "Z:/groups/01/Final_Project/note_player_tb.v" into library work
+Analyzing Verilog file "Z:/groups/01/Final_Project/chords.v" into library work
+Analyzing Verilog file "Z:/groups/01/Final_Project/chords_tb.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
+WARNING:HDLCompiler:1016 - "Z:/groups/01/Final_Project/chords_tb.v" Line 16: Port player_ready is not connected to this instance
 Completed static elaboration
-Fuse Memory Usage: 105544 KB
-Fuse CPU Usage: 389 ms
+Fuse Memory Usage: 105288 KB
+Fuse CPU Usage: 311 ms
+Compiling module dffr(WIDTH=3)
 Compiling module dffr(WIDTH=6)
 Compiling module note_timer
 Compiling module dffr(WIDTH=16)
@@ -25,13 +27,12 @@ Compiling module dffre(WIDTH=22)
 Compiling module sine_rom
 Compiling module sine_reader
 Compiling module note_player
-Compiling module dffre(WIDTH=17)
-Compiling module beat_generator(WIDTH=17,STOP=150...
-Compiling module note_player_tb
+Compiling module chords
+Compiling module chords_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 13 Verilog Units
-Built simulation executable Z:/groups/01/Final_Project/note_player_tb_isim_beh.exe
-Fuse Memory Usage: 134200 KB
-Fuse CPU Usage: 733 ms
+Built simulation executable Z:/groups/01/Final_Project/chords_tb_isim_beh.exe
+Fuse Memory Usage: 134968 KB
+Fuse CPU Usage: 795 ms

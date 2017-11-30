@@ -10,15 +10,13 @@ module sine_reader(
     output wire [15:0] sample
 );
 
-	/* wire next_sample_ready;
-	 wire sample_ready_early;*/
     wire [21:0] current_addr;
     wire [21:0] next_addr;
 
     dffre #(22) sine_ff(.clk(clk), .r(reset|done), .en(generate_next), .d(next_addr), .q(current_addr));
 
 	 assign  next_addr = current_addr+step_size;
-
+	 
 	 wire ready;
     // wait one cycle before updating sample_ready after the sine_rom
     note_timer note_tmr(.clk(clk), .reset(reset), .update_note_length(generate_next), .note_length(6'd2), 

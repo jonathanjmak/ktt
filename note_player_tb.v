@@ -32,21 +32,21 @@ module note_player_tb();
     initial begin
         clk = 1'b0;
         reset = 1'b1;
-        repeat (4) #5 clk = ~clk;
+        repeat (4) #1 clk = ~clk;
         reset = 1'b0;
-        forever #5 clk = ~clk;
+        forever #1 clk = ~clk;
     end
 	 
 	  initial begin
 		generate_next_sample = 1'b0; 
-		#20;
+		@(negedge clk);
 		
 		forever begin
-			#200;
+			#600;
+			@(negedge clk);
 			generate_next_sample = 1'b1;
-			#8;
+			@(negedge clk);
 			generate_next_sample = 1'b0;
-			#2;
 		end
     end
 
@@ -54,19 +54,34 @@ module note_player_tb();
     initial begin
 		duration_to_load = 6'b11;
 		note_to_load = 6'd1;
+		@(negedge reset);
 		#15;
+		@(negedge clk);
 		load_new_note = 1'b1;
+		@(negedge clk);
 		load_new_note = 1'b0;
 		play_enable = 1'b1;
 		
-		note_to_load = 6'd10;
+		while (~done_with_note) @(negedge clk);
+		
+		#20;
+		@(negedge clk);
 		load_new_note = 1'b1;
+		@(negedge clk);
+		load_new_note = 1'b0;
+		
+		note_to_load = 6'd10;
+		@(negedge clk);
+		load_new_note = 1'b1;
+		@(negedge clk);
 		load_new_note = 1'b0;
 		#32000;
+		@(negedge clk);
 		play_enable = 1'b0; //pause
 		#16000;
+		@(negedge clk);
 		play_enable = 1'b1;
-
+		#300000;
     end
 
 endmodule

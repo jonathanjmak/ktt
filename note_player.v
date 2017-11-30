@@ -34,7 +34,7 @@ module note_player(
 	
 	reg next_done;
 
-	wire done_zero_cross = done_with_note & (zero_crossing | (prev_sample == 16'b0));
+	wire done_zero_cross = timer_done & (zero_crossing | (prev_sample == 16'b0));
 
 	always @(*) begin
 		if (done_zero_cross) next_done = 1'b1; //done & zero
@@ -76,7 +76,7 @@ module note_player(
 		.generate_next(generate_next_sample),
 		.sample_ready(next_sample_ready),
 		.sample(curr_sample),
-		.done((timer_done & (zero_crossing | (prev_sample == 16'b0))))
+		.done(done_zero_cross)
 	);
 	
 	assign sample_out = prev_sample;

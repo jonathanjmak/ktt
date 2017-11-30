@@ -20,7 +20,7 @@ module chords(
 	wire signed [17:0] avg;
 	assign avg = ($signed({sample_one, 2'b0})>>>2)+($signed({sample_two, 2'b0})>>>2)+($signed({sample_three, 2'b0})>>>2);
 
-	dffr #(3) player_ff(.clk(clk),.r(reset),.d(next_load_new_note),.q(load_new_note)); //.q(load_new_note)
+	dffr #(3) player_ff(.clk(clk),.r(reset),.d(next_load_new_note),.q(load_new_note));
 
 	
 	always @(*)begin
@@ -33,13 +33,10 @@ module chords(
 	always @(*) begin
 		if (~(player_one_done & player_two_done & player_three_done))
 			sample_out = avg[17:2];
-			//sample_out = sample_one;
 		else if (~((player_one_done&player_two_done)|(player_two_done&player_three_done)|(player_one_done&player_three_done)))
 			sample_out = avg[16:1];	
-			//sample_out = sample_two;
 		else
 			sample_out = avg[15:0];
-			//sample_out = sample_three;
 	end
 	
 	note_player player_one(
@@ -48,7 +45,7 @@ module chords(
         .play_enable(play),
         .note_to_load(note),
         .duration_to_load(duration),
-        .load_new_note(load_new_note[2]), // load .load_new_note(load_new_note[2]), // load
+        .load_new_note(load_new_note[2]),
         .done_with_note(player_one_done),
         .beat(beat),
         .generate_next_sample(generate_next_sample),
@@ -62,7 +59,7 @@ module chords(
         .play_enable(play),
         .note_to_load(note),
         .duration_to_load(duration),
-        .load_new_note(load_new_note[1]), // load .load_new_note(load_new_note[1])
+        .load_new_note(load_new_note[1]),
         .done_with_note(player_two_done),
         .beat(beat),
         .generate_next_sample(generate_next_sample),
@@ -76,13 +73,12 @@ module chords(
         .play_enable(play),
         .note_to_load(note),
         .duration_to_load(duration),
-        .load_new_note(load_new_note[0]), // load .load_new_note(load_new_note[0])
+        .load_new_note(load_new_note[0]),
         .done_with_note(player_three_done),
         .beat(beat),
         .generate_next_sample(generate_next_sample),
         .sample_out(sample_three), // sample 3
         .new_sample_ready(new_sample_ready)
     );
-	 
 	assign player_ready = player_one_done | player_two_done | player_three_done;
 endmodule

@@ -16,8 +16,8 @@ module note_timer(
 	always @(*) begin
 		if (reset) next = 0;
 		else if (update_note_length) next = note_length;
-		else if (beat) next = (counter==6'b0) ? 6'b0 : (counter-1);
 		else if (pause) next = counter;
+		else if (beat) next = (counter==6'b0) ? 6'b0 : (counter-1);
 		else next = counter; // do nothing as default
 	end
 
