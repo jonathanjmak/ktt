@@ -1,29 +1,29 @@
 Command line:
    note_player_tb_isim_beh.exe
      -simmode  gui
-     -simrunnum  0
-     -socket  53379
+     -simrunnum  1
+     -socket  49519
 
-Thu Nov 30 12:50:21 2017
+Fri Dec 01 11:03:33 2017
 
 
- Elaboration Time: 0.1716 sec
+ Elaboration Time: 0.187202 sec
 
- Current Memory Usage: 796.852 Meg
+ Current Memory Usage: 796.705 Meg
 
- Total Signals          : 120
- Total Nets             : 17985
- Total Signal Drivers   : 1139
- Total Blocks           : 21
- Total Primitive Blocks : 15
- Total Processes        : 1162
- Total Traceable Variables  : 59
- Total Scalar Nets and Variables : 18676
-Total Line Count : 1243
+ Total Signals          : 113
+ Total Nets             : 17967
+ Total Signal Drivers   : 1137
+ Total Blocks           : 20
+ Total Primitive Blocks : 14
+ Total Processes        : 1158
+ Total Traceable Variables  : 56
+ Total Scalar Nets and Variables : 18624
+Total Line Count : 1227
 
- Total Simulation Time: 0.1872 sec
+ Total Simulation Time: 0.265202 sec
 
- Current Memory Usage: 796.852 Meg
+ Current Memory Usage: 797.753 Meg
 
-Thu Nov 30 12:50:30 2017
+Fri Dec 01 11:03:50 2017
 

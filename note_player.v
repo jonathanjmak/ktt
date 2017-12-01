@@ -16,8 +16,9 @@ module note_player(
 	reg [5:0] next_note, next_duration;
 	wire [5:0] curr_note, curr_duration;
 	wire load;
-    // note duration so far
-    note_timer note_tmr(
+	
+   // note duration so far
+   note_timer note_tmr(
 		.clk(clk), 
 		.reset(reset),
 		.update_note_length(load), //.update_note_length(load)

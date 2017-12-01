@@ -14,6 +14,7 @@ module chords(
 
 	wire [15:0] sample_one, sample_two, sample_three;
 	wire player_one_done, player_two_done, player_three_done;
+	wire sample_one_ready, sample_two_ready, sample_three_ready;
 	wire [2:0] load_new_note;
 	reg [2:0] next_load_new_note;
 	
@@ -50,7 +51,7 @@ module chords(
         .beat(beat),
         .generate_next_sample(generate_next_sample),
         .sample_out(sample_one), // sample 1
-        .new_sample_ready()
+        .new_sample_ready(sample_one_ready)
     );
 	 
 	note_player player_two(
@@ -64,7 +65,7 @@ module chords(
         .beat(beat),
         .generate_next_sample(generate_next_sample),
         .sample_out(sample_two), // sample 2
-        .new_sample_ready()
+        .new_sample_ready(sample_two_ready)
     );
 	 
 	 note_player player_three(
@@ -78,7 +79,9 @@ module chords(
         .beat(beat),
         .generate_next_sample(generate_next_sample),
         .sample_out(sample_three), // sample 3
-        .new_sample_ready(new_sample_ready)
+        .new_sample_ready(sample_three_ready)
     );
+	 
+	assign new_sample_ready = sample_one_ready | sample_two_ready | sample_three_ready;
 	assign player_ready = player_one_done | player_two_done | player_three_done;
 endmodule
