@@ -4,7 +4,7 @@ run
 -ifn lab5_top.prj
 -ofn lab5_top
 -ofmt NGC
--p xc7z020-3-clg484
+-p xc7z020-1-clg484
 -top lab5_top
 -opt_mode Speed
 -opt_level 1

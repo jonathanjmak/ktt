@@ -1,6 +1,7 @@
 module chords(
 	input clk,
 	input reset,
+	input new_frame,
 	input play,
 	input [5:0] note,
 	input [5:0] duration,
@@ -8,7 +9,7 @@ module chords(
 	input beat,
 	input generate_next_sample,
 	output player_ready,
-	output reg [15:0] sample_out,
+	output [15:0] sample_out,
 	output new_sample_ready
 );
 
@@ -23,7 +24,7 @@ module chords(
 
 	dffr #(3) player_ff(.clk(clk),.r(reset),.d(next_load_new_note),.q(load_new_note));
 
-	
+	reg [15:0] sample_out_ndyn;
 	always @(*)begin
 		if (player_one_done) next_load_new_note = {new_note, 1'b0, 1'b0};
 		else if (player_two_done) next_load_new_note = {1'b0, new_note, 1'b0};
@@ -33,11 +34,11 @@ module chords(
 	
 	always @(*) begin
 		if (~(player_one_done & player_two_done & player_three_done))
-			sample_out = avg[17:2];
+			sample_out_ndyn = avg[17:2];
 		else if (~((player_one_done&player_two_done)|(player_two_done&player_three_done)|(player_one_done&player_three_done)))
-			sample_out = avg[16:1];	
+			sample_out_ndyn = avg[16:1];	
 		else
-			sample_out = avg[15:0];
+			sample_out_ndyn = avg[15:0];
 	end
 	
 	note_player player_one(
@@ -82,6 +83,18 @@ module chords(
         .new_sample_ready(sample_three_ready)
     );
 	 
+	dynamics dut(
+		.note_duration(duration),
+		.clk(clk),
+		.reset(reset),
+		.sample_start(sample_out_ndyn),
+		.done_with_note(player_ready),
+		.new_sample_ready(new_sample_ready),
+		.beat(beat),
+		.final_sample(sample_out),
+		.new_frame(new_frame)
+	);
+	// assign sample_out=sample_out_ndyn; //test without dynamics
 	assign new_sample_ready = sample_one_ready | sample_two_ready | sample_three_ready;
 	assign player_ready = player_one_done | player_two_done | player_three_done;
 endmodule

@@ -1,0 +1,3 @@
+verilog work "ram_1w2r.v"
+verilog work "ff_lib.v"
+verilog work "echo.v"

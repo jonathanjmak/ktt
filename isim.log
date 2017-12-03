@@ -5,6 +5,8 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
+WARNING:  For instance dut/attack_sub_ff/, width 14 of formal port d is not equal to width 5 of actual constant.
+WARNING: File "//afs/ir/class/ee108/groups/01/Final_Project/dynamics.v" Line 29.  For instance dut/attack_sub_ff/, width 14 of formal port q is not equal to width 5 of actual signal attack_count.
 Time resolution is 1 ps
 # onerror resume
 # wave add /
@@ -16,6 +18,18 @@ WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
+WARNING:  For instance dut/attack_sub_ff/, width 14 of formal port d is not equal to width 5 of actual constant.
+WARNING: File "//afs/ir/class/ee108/groups/01/Final_Project/dynamics.v" Line 29.  For instance dut/attack_sub_ff/, width 14 of formal port q is not equal to width 5 of actual signal attack_count.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x8ef4fb42)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING:  For instance dut/attack_sub_ff/, width 14 of formal port d is not equal to width 5 of actual constant.
+WARNING: File "//afs/ir/class/ee108/groups/01/Final_Project/dynamics.v" Line 29.  For instance dut/attack_sub_ff/, width 14 of formal port q is not equal to width 5 of actual signal attack_count.
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.

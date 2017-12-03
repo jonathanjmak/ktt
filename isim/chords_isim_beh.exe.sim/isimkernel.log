@@ -1,0 +1,29 @@
+Command line:
+   chords_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  50895
+
+Sat Dec 02 14:25:34 2017
+
+
+ Elaboration Time: 0.468004 sec
+
+ Current Memory Usage: 1088.25 Meg
+
+ Total Signals          : 370
+ Total Nets             : 54047
+ Total Signal Drivers   : 3401
+ Total Blocks           : 62
+ Total Primitive Blocks : 47
+ Total Processes        : 3464
+ Total Traceable Variables  : 124
+ Total Scalar Nets and Variables : 55942
+Total Line Count : 3606
+
+ Total Simulation Time: 0.514804 sec
+
+ Current Memory Usage: 1088.25 Meg
+
+Sat Dec 02 14:25:38 2017
+

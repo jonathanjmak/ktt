@@ -15,7 +15,7 @@ module music_player(
     input play_button,
     input next_button,
 
-    // The raw new_frame signal from the ac97_if codec.
+    // The raw  signal from the ac97_if codec.
     input new_frame,
 
     // This output must go high for one cycle when a new sample is generated.
@@ -92,9 +92,10 @@ module music_player(
 		chords chord_module(	
 			.clk(clk), 
 			.reset(reset|reset_player),
+			.new_frame(new_frame),
 			.play(play),
-			.note(note), 
-			.duration(duration),
+			.note(note_to_play),
+			.duration(duration_for_note),
 			.new_note(new_note),
 			.beat(beat),
 			.generate_next_sample(generate_next_sample),

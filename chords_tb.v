@@ -9,6 +9,7 @@ reg [5:0] note;
 reg [5:0] duration;
 reg new_note;
 reg beat;
+reg new_frame;
 reg gen_next;
 wire [15:0] sample_out;
 wire samp_rdy;
@@ -16,6 +17,7 @@ wire samp_rdy;
 chords chord_module(	
 	.clk(clk), 
 	.reset(reset),
+	.new_frame(new_frame),
 	.play(play),
 	.note(note), 
 	.duration(duration),
@@ -45,8 +47,10 @@ initial begin
 	gen_next = 1'b0;
 	#6
 	forever begin
-		#28 gen_next = 1'b1;
-		#4 gen_next = 1'b0;
+		#28 new_frame = 1'b1;
+		gen_next = 1'b1;
+		#4 new_frame = 1'b0;
+		gen_next = 1'b0;
 	end
 		
 end
@@ -59,7 +63,7 @@ initial begin
 	new_note = 1'b0;
 	
 	reset = 1'b1;
-	#4
+	#20
 	reset = 1'b0;
 	
 	note = 6'd37;

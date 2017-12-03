@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-RM128-8::  Wed Nov 29 10:54:44 2017
+RM128-3::  Fri Dec 01 14:13:38 2017
 
 par -w -intstyle ise -ol high -mt off lab5_top_map.ncd lab5_top.ncd
 lab5_top.pcf 
@@ -9,13 +9,13 @@ lab5_top.pcf
 
 Constraints file: lab5_top.pcf.
 Loading device for application Rf_Device from file '7z020.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
-   "lab5_top" is an NCD, version 3.2, device xc7z020, package clg484, speed -3
+   "lab5_top" is an NCD, version 3.2, device xc7z020, package clg484, speed -1
 
 Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
 Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
 
 
-Device speed data version:  "PRELIMINARY 1.08 2013-10-13".
+Device speed data version:  "PRODUCTION 1.08 2013-10-13".
 
 
 
@@ -33,14 +33,14 @@ Device Utilization Summary:
    Number of OLOGICE2s                      10 out of 200     5%
    Number of PLLE2_ADVs                      1 out of 4      25%
    Number of RAMB18E1s                       6 out of 280     2%
-   Number of Slices                        255 out of 13300   1%
-   Number of Slice Registers               504 out of 106400  1%
-      Number used as Flip Flops            504
+   Number of Slices                        361 out of 13300   2%
+   Number of Slice Registers               673 out of 106400  1%
+      Number used as Flip Flops            673
       Number used as Latches                 0
       Number used as LatchThrus              0
 
-   Number of Slice LUTS                    616 out of 53200   1%
-   Number of Slice LUT-Flip Flop pairs     664 out of 53200   1%
+   Number of Slice LUTS                    980 out of 53200   1%
+   Number of Slice LUT-Flip Flop pairs    1027 out of 53200   1%
 
 
 Overall effort level (-ol):   High 
@@ -50,32 +50,31 @@ Starting initial Timing Analysis.  REAL time: 19 secs
 Finished initial Timing Analysis.  REAL time: 19 secs 
 
 WARNING:Par:288 - The signal btn_down_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal btn_left_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal AC_GPIO1_IBUF has no load.  PAR will not attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 4825 unrouted;      REAL time: 21 secs 
+Phase  1  : 6174 unrouted;      REAL time: 20 secs 
 
-Phase  2  : 3094 unrouted;      REAL time: 21 secs 
+Phase  2  : 4246 unrouted;      REAL time: 21 secs 
 
-Phase  3  : 1092 unrouted;      REAL time: 23 secs 
+Phase  3  : 1280 unrouted;      REAL time: 23 secs 
 
-Phase  4  : 1091 unrouted; (Setup:179108, Hold:13423, Component Switching Limit:0)     REAL time: 28 secs 
+Phase  4  : 1262 unrouted; (Setup:248785, Hold:10435, Component Switching Limit:0)     REAL time: 29 secs 
 
 Updating file: lab5_top.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:179266, Hold:12402, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  5  : 0 unrouted; (Setup:248807, Hold:9954, Component Switching Limit:0)     REAL time: 31 secs 
 
-Phase  6  : 0 unrouted; (Setup:179266, Hold:12402, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  6  : 0 unrouted; (Setup:248807, Hold:9954, Component Switching Limit:0)     REAL time: 31 secs 
 
-Phase  7  : 0 unrouted; (Setup:179266, Hold:12402, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  7  : 0 unrouted; (Setup:248807, Hold:9954, Component Switching Limit:0)     REAL time: 31 secs 
 
-Phase  8  : 0 unrouted; (Setup:179266, Hold:12402, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  8  : 0 unrouted; (Setup:248807, Hold:9954, Component Switching Limit:0)     REAL time: 31 secs 
 
-Phase  9  : 0 unrouted; (Setup:179266, Hold:0, Component Switching Limit:0)     REAL time: 31 secs 
-Total REAL time to Router completion: 31 secs 
-Total CPU time to Router completion: 30 secs 
+Phase  9  : 0 unrouted; (Setup:248807, Hold:0, Component Switching Limit:0)     REAL time: 34 secs 
+Total REAL time to Router completion: 34 secs 
+Total CPU time to Router completion: 34 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -93,22 +92,22 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|adau1761_codec/clk_4 |              |      |      |            |             |
-|                   8 | BUFGCTRL_X0Y1| No   |   36 |  0.138     |  1.397      |
+|   clk_100_IBUF_BUFG | BUFGCTRL_X0Y0| No   |  113 |  0.219     |  1.879      |
 +---------------------+--------------+------+------+------------+-------------+
-|   clk_100_IBUF_BUFG | BUFGCTRL_X0Y0| No   |   65 |  0.179     |  1.441      |
+|adau1761_codec/clk_4 |              |      |      |            |             |
+|                   8 | BUFGCTRL_X0Y1| No   |   36 |  0.177     |  1.823      |
 +---------------------+--------------+------+------+------------+-------------+
 |adau1761_codec/codec |              |      |      |            |             |
 |_clock_gen/clkfbout_ |              |      |      |            |             |
-|                 buf | BUFGCTRL_X0Y2| No   |    1 |  0.000     |  1.389      |
+|                 buf | BUFGCTRL_X0Y2| No   |    1 |  0.000     |  1.759      |
 +---------------------+--------------+------+------+------------+-------------+
-|            hdmi/clk |         Local|      |   78 |  0.423     |  2.244      |
+|            hdmi/clk |         Local|      |   78 |  0.173     |  2.592      |
 +---------------------+--------------+------+------+------------+-------------+
-|        clk_100_IBUF |         Local|      |    5 |  0.014     |  1.027      |
+|        clk_100_IBUF |         Local|      |    5 |  0.021     |  1.306      |
 +---------------------+--------------+------+------+------------+-------------+
-|          hdmi/clk90 |         Local|      |    1 |  0.000     |  2.298      |
+|          hdmi/clk90 |         Local|      |    1 |  0.000     |  3.094      |
 +---------------------+--------------+------+------+------------+-------------+
-|          hdmi/clkfb |         Local|      |    1 |  0.000     |  0.011      |
+|          hdmi/clkfb |         Local|      |    1 |  0.000     |  0.014      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -119,7 +118,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 179266 (Setup: 179266, Hold: 0, Component Switching Limit: 0)
+Timing Score: 248807 (Setup: 248807, Hold: 0, Component Switching Limit: 0)
 
 WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in your design.
 
@@ -146,18 +145,18 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* TS_adau1761_codec_codec_clock_gen_clkout0 | SETUP       |    -6.089ns|   173.116ns|      32|      179266
-   = PERIOD TIMEGRP         "adau1761_codec | HOLD        |     0.160ns|            |       0|           0
+* TS_adau1761_codec_codec_clock_gen_clkout0 | SETUP       |    -8.544ns|   234.515ns|      32|      248807
+   = PERIOD TIMEGRP         "adau1761_codec | HOLD        |     0.176ns|            |       0|           0
   _codec_clock_gen_clkout0" TS_clk_100 / 0. |             |            |            |        |            
   48 HIGH 50%                               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_clk_100 = PERIOD TIMEGRP "clk_100" 10  | SETUP       |     2.024ns|     6.207ns|       0|           0
-  ns HIGH 50%                               | HOLD        |     0.088ns|            |       0|           0
+  TS_clk_100 = PERIOD TIMEGRP "clk_100" 10  | SETUP       |     1.646ns|     8.354ns|       0|           0
+  ns HIGH 50%                               | HOLD        |     0.048ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_hdmi_clk = PERIOD TIMEGRP "hdmi_clk" T | SETUP       |     4.465ns|     5.535ns|       0|           0
-  S_clk_100 HIGH 50%                        | HOLD        |     0.046ns|            |       0|           0
+  TS_hdmi_clk = PERIOD TIMEGRP "hdmi_clk" T | SETUP       |     2.710ns|     7.290ns|       0|           0
+  S_clk_100 HIGH 50%                        | HOLD        |     0.127ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_hdmi_clk90 = PERIOD TIMEGRP "hdmi_clk9 | MINPERIOD   |     8.737ns|     1.263ns|       0|           0
+  TS_hdmi_clk90 = PERIOD TIMEGRP "hdmi_clk9 | MINPERIOD   |     8.526ns|     1.474ns|       0|           0
   0" TS_clk_100 PHASE 3.75 ns HIGH 50%      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 
@@ -172,11 +171,11 @@ Derived Constraints for TS_clk_100
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clk_100                     |     10.000ns|      6.207ns|     83.096ns|            0|           32|         3906|        11197|
-| TS_adau1761_codec_codec_clock_|     20.833ns|    173.116ns|          N/A|           32|            0|         5982|            0|
+|TS_clk_100                     |     10.000ns|      8.354ns|    112.567ns|            0|           32|        26556|         9231|
+| TS_adau1761_codec_codec_clock_|     20.833ns|    234.515ns|          N/A|           32|            0|         4122|            0|
 | gen_clkout0                   |             |             |             |             |             |             |             |
-| TS_hdmi_clk                   |     10.000ns|      5.535ns|          N/A|            0|            0|         5215|            0|
-| TS_hdmi_clk90                 |     10.000ns|      1.263ns|          N/A|            0|            0|            0|            0|
+| TS_hdmi_clk                   |     10.000ns|      7.290ns|          N/A|            0|            0|         5109|            0|
+| TS_hdmi_clk90                 |     10.000ns|      1.474ns|          N/A|            0|            0|            0|            0|
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 1 constraint not met.
@@ -186,19 +185,19 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-WARNING:Par:283 - There are 3 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 35 secs 
-Total CPU time to PAR completion: 33 secs 
+Total REAL time to PAR completion: 37 secs 
+Total CPU time to PAR completion: 36 secs 
 
-Peak Memory Usage:  464 MB
+Peak Memory Usage:  466 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
 Timing: Completed - 32 errors found.
 
 Number of error messages: 0
-Number of warning messages: 6
+Number of warning messages: 5
 Number of info messages: 0
 
 Writing design to file lab5_top.ncd

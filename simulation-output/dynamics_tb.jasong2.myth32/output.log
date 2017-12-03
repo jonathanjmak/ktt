@@ -1,0 +1,19 @@
+LXT2 info: dumpfile dump.lx2 opened for output.
+Duration: 000011, new_sample_ready : 0, final_sample: 0000000000000000, expected: 0000000000000000
+Duration: 000011, new_sample_ready : 0, final_sample expected? 0
+Duration: 000011, new_sample_ready : 0, final_sample expected? 0
+Duration: 000011, new_sample_ready : 0, final_sample expected? 0
+Duration: 000011, new_sample_ready : 0, final_sample expected? 0
+Duration: 000011, new_sample_ready : 0, final_sample expected? 0
+Duration: 000011, new_sample_ready : 0, final_sample expected? 0
+Duration: 000011, new_sample_ready : 0, final_sample expected? 0
+Duration: 000011, new_sample_ready : 0, final_sample expected? 1
+Duration: 011000, new_sample_ready : 1, final_sample expected? 0
+Duration: 011000, new_sample_ready : 0, final_sample expected? 0
+Duration: 011000, new_sample_ready : 0, final_sample expected? 0
+Duration: 011000, new_sample_ready : 0, final_sample expected? 0
+Duration: 011000, new_sample_ready : 0, final_sample expected? 0
+Duration: 011000, new_sample_ready : 0, final_sample expected? 0
+Duration: 011000, new_sample_ready : 0, final_sample expected? 0
+Duration: 011000, new_sample_ready : 0, final_sample expected? 0
+Duration: 011000, new_sample_ready : 0, final_sample expected? 1

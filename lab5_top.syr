@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.25 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> Reading design: lab5_top.prj
 
@@ -46,7 +46,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "lab5_top"
 Output Format                      : NGC
-Target Device                      : xc7z020-3-clg484
+Target Device                      : xc7z020-1-clg484
 
 ---- Source Options
 Top Module Name                    : lab5_top
@@ -232,11 +232,9 @@ WARNING:HDLCompiler:189 - "\\afs\ir\class\ee108\groups\01\Final_Project\song_rea
 Elaborating module <note_timer>.
 
 Elaborating module <dffr(WIDTH=6)>.
-WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\01\Final_Project\note_timer.v" Line 19: Result of 32-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\01\Final_Project\note_timer.v" Line 20: Result of 32-bit expression is truncated to fit in 6-bit target.
 WARNING:HDLCompiler:1127 - "\\afs\ir\class\ee108\groups\01\Final_Project\song_reader.v" Line 55: Assignment to metadata ignored, since the identifier is never used
 WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\01\Final_Project\song_reader.v" Line 59: Result of 32-bit expression is truncated to fit in 7-bit target.
-WARNING:HDLCompiler:1127 - "\\afs\ir\class\ee108\groups\01\Final_Project\music_player.v" Line 78: Assignment to note_to_play ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "\\afs\ir\class\ee108\groups\01\Final_Project\music_player.v" Line 79: Assignment to duration_for_note ignored, since the identifier is never used
 
 Elaborating module <chords>.
 
@@ -251,12 +249,9 @@ Elaborating module <frequency_rom>.
 Elaborating module <sine_reader>.
 
 Elaborating module <dffre(WIDTH=22)>.
-WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\01\Final_Project\sine_reader.v" Line 32: Result of 22-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "\\afs\ir\class\ee108\groups\01\Final_Project\sine_reader.v" Line 30: Result of 22-bit expression is truncated to fit in 20-bit target.
 
 Elaborating module <sine_rom>.
-WARNING:HDLCompiler:634 - "\\afs\ir\class\ee108\groups\01\Final_Project\note_player.v" Line 79: Net <done> does not have a driver.
-WARNING:HDLCompiler:189 - "\\afs\ir\class\ee108\groups\01\Final_Project\music_player.v" Line 96: Size mismatch in connection of port <note>. Formal port size is 6-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "\\afs\ir\class\ee108\groups\01\Final_Project\music_player.v" Line 97: Size mismatch in connection of port <duration>. Formal port size is 6-bit while actual signal size is 1-bit.
 
 Elaborating module <beat_generator(WIDTH=10,STOP=1000)>.
 
@@ -267,8 +262,6 @@ Elaborating module <codec_conditioner>.
 Elaborating module <dffre(WIDTH=1)>.
 
 Elaborating module <dffre(WIDTH=16)>.
-WARNING:HDLCompiler:634 - "\\afs\ir\class\ee108\groups\01\Final_Project\music_player.v" Line 96: Net <note> does not have a driver.
-WARNING:HDLCompiler:634 - "\\afs\ir\class\ee108\groups\01\Final_Project\music_player.v" Line 97: Net <duration> does not have a driver.
 
 Elaborating module <dff(WIDTH=17)>.
 WARNING:HDLCompiler:1127 - "\\afs\ir\class\ee108\groups\01\Final_Project\lab5_top.v" Line 116: Assignment to flopped_new_sample ignored, since the identifier is never used
@@ -325,7 +318,7 @@ Elaborating module <wave_display>.
 
 Elaborating module <dffr(WIDTH=9)>.
 WARNING:Xst:2972 - "\\afs\ir\class\ee108\groups\01\Final_Project\song_reader.v" line 25. All outputs of instance <player_on> of block <dffr> are unconnected in block <song_reader>. Underlying logic will be removed.
-WARNING:Xst:2972 - "\\afs\ir\class\ee108\groups\01\Final_Project\note_player.v" line 49. All outputs of instance <note_ff> of block <dffr> are unconnected in block <note_player>. Underlying logic will be removed.
+WARNING:Xst:2972 - "\\afs\ir\class\ee108\groups\01\Final_Project\note_player.v" line 50. All outputs of instance <note_ff> of block <dffr> are unconnected in block <note_player>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -409,10 +402,6 @@ Unit <dffr> synthesized.
 Synthesizing Unit <music_player>.
     Related source file is "\\afs\ir\class\ee108\groups\01\Final_Project\music_player.v".
         BEAT_COUNT = 1000
-INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\01\Final_Project\music_player.v" line 70: Output port <note> of the instance <song_reader> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\01\Final_Project\music_player.v" line 70: Output port <duration> of the instance <song_reader> is unconnected or connected to loadless signal.
-WARNING:Xst:653 - Signal <note> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-WARNING:Xst:653 - Signal <duration> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <music_player> synthesized.
@@ -462,11 +451,10 @@ Unit <song_rom> synthesized.
 
 Synthesizing Unit <note_timer>.
     Related source file is "\\afs\ir\class\ee108\groups\01\Final_Project\note_timer.v".
-WARNING:Xst:647 - Input <pause> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 7-bit subtractor for signal <GND_16_o_GND_16_o_sub_2_OUT> created at line 19.
+    Found 7-bit subtractor for signal <GND_16_o_GND_16_o_sub_2_OUT> created at line 20.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   4 Multiplexer(s).
+	inferred   5 Multiplexer(s).
 Unit <note_timer> synthesized.
 
 Synthesizing Unit <dffr_5>.
@@ -479,10 +467,8 @@ Unit <dffr_5> synthesized.
 
 Synthesizing Unit <chords>.
     Related source file is "\\afs\ir\class\ee108\groups\01\Final_Project\chords.v".
-INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\01\Final_Project\chords.v" line 43: Output port <new_sample_ready> of the instance <player_one> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "\\afs\ir\class\ee108\groups\01\Final_Project\chords.v" line 57: Output port <new_sample_ready> of the instance <player_two> is unconnected or connected to loadless signal.
-    Found 17-bit adder for signal <n0038[16:0]> created at line 21.
-    Found 18-bit adder for signal <n0041> created at line 21.
+    Found 17-bit adder for signal <sample_one[15]_sample_two[15]_add_0_OUT> created at line 22.
+    Found 18-bit adder for signal <avg> created at line 22.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred   5 Multiplexer(s).
@@ -490,8 +476,7 @@ Unit <chords> synthesized.
 
 Synthesizing Unit <note_player>.
     Related source file is "\\afs\ir\class\ee108\groups\01\Final_Project\note_player.v".
-WARNING:Xst:653 - Signal <done> is used but never assigned. This sourceless signal will be automatically connected to value GND.
-    Found 1-bit comparator not equal for signal <n0001> created at line 33
+    Found 1-bit comparator not equal for signal <n0001> created at line 34
     Summary:
 	inferred   1 Comparator(s).
 	inferred   4 Multiplexer(s).
@@ -524,10 +509,10 @@ Unit <frequency_rom> synthesized.
 
 Synthesizing Unit <sine_reader>.
     Related source file is "\\afs\ir\class\ee108\groups\01\Final_Project\sine_reader.v".
-    Found 22-bit subtractor for signal <current_addr[21]_GND_23_o_sub_2_OUT> created at line 32.
-    Found 22-bit subtractor for signal <GND_23_o_current_addr[21]_sub_3_OUT> created at line 32.
-    Found 22-bit adder for signal <next_addr> created at line 20.
-    Found 16-bit subtractor for signal <GND_23_o_sine_rom_output[15]_sub_7_OUT> created at line 40.
+    Found 22-bit subtractor for signal <current_addr[21]_GND_23_o_sub_2_OUT> created at line 30.
+    Found 22-bit subtractor for signal <GND_23_o_current_addr[21]_sub_3_OUT> created at line 30.
+    Found 22-bit adder for signal <next_addr> created at line 18.
+    Found 16-bit subtractor for signal <GND_23_o_sine_rom_output[15]_sub_7_OUT> created at line 38.
     Summary:
 	inferred   4 Adder/Subtractor(s).
 	inferred   2 Multiplexer(s).
@@ -941,7 +926,7 @@ Macro Statistics
  12-bit comparator lessequal                           : 2
  8-bit comparator lessequal                            : 4
  9-bit comparator not equal                            : 1
-# Multiplexers                                         : 210
+# Multiplexers                                         : 217
  1-bit 2-to-1 multiplexer                              : 83
  1-bit 4-to-1 multiplexer                              : 3
  10-bit 2-to-1 multiplexer                             : 14
@@ -956,7 +941,7 @@ Macro Statistics
  3-bit 7-to-1 multiplexer                              : 1
  32-bit 2-to-1 multiplexer                             : 8
  4-bit 2-to-1 multiplexer                              : 13
- 6-bit 2-to-1 multiplexer                              : 25
+ 6-bit 2-to-1 multiplexer                              : 32
  64-bit 2-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 16
  9-bit 2-to-1 multiplexer                              : 7
@@ -973,18 +958,6 @@ Macro Statistics
 =========================================================================
 
 WARNING:Xst:1290 - Hierarchical block <song_counter_ff> is unconnected in block <mcu>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <sample_ready_ff> is unconnected in block <player_one>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <note_tmr> is unconnected in block <sine_reader>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <ready_ff> is unconnected in block <sine_reader>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <sample_ready_ff> is unconnected in block <player_two>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <note_tmr> is unconnected in block <sine_reader>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <ready_ff> is unconnected in block <sine_reader>.
    It will be removed from the design.
 INFO:Xst:2261 - The FF/Latch <g1_out_0> in Unit <i_convert_444_422> is equivalent to the following 2 FFs/Latches, which will be removed : <r1_out_0> <b1_out_0> 
 WARNING:Xst:1710 - FF/Latch <g1_out_0> (without init value) has a constant value of 0 in block <i_convert_444_422>. This FF/Latch will be trimmed during the optimization process.
@@ -1186,7 +1159,7 @@ Macro Statistics
  12-bit comparator lessequal                           : 2
  8-bit comparator lessequal                            : 4
  9-bit comparator not equal                            : 1
-# Multiplexers                                         : 182
+# Multiplexers                                         : 189
  1-bit 2-to-1 multiplexer                              : 60
  1-bit 4-to-1 multiplexer                              : 3
  10-bit 2-to-1 multiplexer                             : 14
@@ -1201,7 +1174,7 @@ Macro Statistics
  3-bit 7-to-1 multiplexer                              : 1
  32-bit 2-to-1 multiplexer                             : 8
  4-bit 2-to-1 multiplexer                              : 13
- 6-bit 2-to-1 multiplexer                              : 25
+ 6-bit 2-to-1 multiplexer                              : 32
  64-bit 2-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 12
  9-bit 2-to-1 multiplexer                              : 6
@@ -1217,8 +1190,6 @@ Macro Statistics
 WARNING:Xst:1710 - FF/Latch <r1_out_0> (without init value) has a constant value of 0 in block <convert_444_422>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b1_out_0> (without init value) has a constant value of 0 in block <convert_444_422>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <g1_out_0> (without init value) has a constant value of 0 in block <convert_444_422>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <player_two/sample_ready_ff/q_0> of sequential type is unconnected in block <chords>.
-WARNING:Xst:2677 - Node <player_one/sample_ready_ff/q_0> of sequential type is unconnected in block <chords>.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <adau1761_codec/i2c_interface/Inst_i2c/FSM_0> on signal <state[1:3]> with sequential encoding.
 -------------------
@@ -1231,24 +1202,6 @@ Optimizing FSM <adau1761_codec/i2c_interface/Inst_i2c/FSM_0> on signal <state[1:
  0100  | 100
 -------------------
 WARNING:Xst:1710 - FF/Latch <dout_19> (without init value) has a constant value of 0 in block <frequency_rom>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <player_one/duration_ff/q_5> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_one/duration_ff/q_4> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_one/duration_ff/q_3> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_one/duration_ff/q_2> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_one/duration_ff/q_1> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_one/duration_ff/q_0> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_two/duration_ff/q_5> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_two/duration_ff/q_4> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_two/duration_ff/q_3> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_two/duration_ff/q_2> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_two/duration_ff/q_1> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_two/duration_ff/q_0> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_three/duration_ff/q_5> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_three/duration_ff/q_4> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_three/duration_ff/q_3> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_three/duration_ff/q_2> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_three/duration_ff/q_1> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_three/duration_ff/q_0> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <sr_out_24> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_25> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <sr_out_26> has a constant value of 0 in block <i2s_data_interface>. This FF/Latch will be trimmed during the optimization process.
@@ -1338,24 +1291,6 @@ Optimizing unit <song_reader> ...
 Optimizing unit <note_timer> ...
 
 Optimizing unit <chords> ...
-WARNING:Xst:1710 - FF/Latch <player_three/note_done_ff/q_0> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_two/note_done_ff/q_0> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_one/note_done_ff/q_0> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_ff/q_0> is unconnected in block <chords>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_three/load_ff/q_0> is unconnected in block <chords>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_ff/q_1> is unconnected in block <chords>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_two/load_ff/q_0> is unconnected in block <chords>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_ff/q_2> is unconnected in block <chords>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_one/load_ff/q_0> is unconnected in block <chords>.
-WARNING:Xst:1710 - FF/Latch <player_three/note_done_ff/q_0> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_two/note_done_ff/q_0> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <player_one/note_done_ff/q_0> (without init value) has a constant value of 0 in block <chords>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_ff/q_0> is unconnected in block <chords>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_three/load_ff/q_0> is unconnected in block <chords>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_ff/q_1> is unconnected in block <chords>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_two/load_ff/q_0> is unconnected in block <chords>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_ff/q_2> is unconnected in block <chords>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <player_one/load_ff/q_0> is unconnected in block <chords>.
 
 Optimizing unit <frequency_rom> ...
 
@@ -1375,44 +1310,13 @@ Optimizing unit <colour_space_conversion> ...
 Optimizing unit <wave_capture> ...
 
 Optimizing unit <wave_display> ...
-WARNING:Xst:1710 - FF/Latch <music_player/chord_module/player_three/sine_reader/note_tmr/tmr_ff/q_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_0> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_1> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_2> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_3> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_4> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_6> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_7> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_8> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_9> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_10> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_11> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_12> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_13> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_14> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_15> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_16> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_17> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/frequency_rom/dout_18> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/song_reader/note_tmr/tmr_ff/q_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <music_player/song_reader/note_tmr/tmr_ff/q_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/note_tmr/tmr_ff/q_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <hdmi/ypos_0> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:2677 - Node <music_player/mcu/song_counter_ff/q_0> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:2677 - Node <music_player/mcu/song_counter_ff/q_1> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_5> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_4> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_3> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_2> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_1> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_0> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_one/sine_reader/ready_ff/q_0> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_5> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_4> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_3> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_2> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_1> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_0> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/chord_module/player_two/sine_reader/ready_ff/q_0> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:2677 - Node <sample_reg/q_16> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:2677 - Node <sample_reg/q_7> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:2677 - Node <sample_reg/q_6> of sequential type is unconnected in block <lab5_top>.
@@ -1603,123 +1507,20 @@ WARNING:Xst:2677 - Node <hdmi/i_vga_generator/ypos_11> of sequential type is unc
 WARNING:Xst:2677 - Node <hdmi/i_vga_generator/ypos_10> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:2677 - Node <hdmi/i_vga_generator/ypos_0> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:1710 - FF/Latch <music_player/song_reader/note_tmr/tmr_ff/q_4> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_4> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_4> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/note_tmr/tmr_ff/q_4> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <play_button_press_unit/sync/ff3/q_0> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/sync/ff2/q_0> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/sync/ff1/q_0> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/one_pulse/last_value_storage/q_0> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_19> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_18> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_17> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_16> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_15> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_14> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_13> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_12> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_11> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_10> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_9> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_8> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_7> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_6> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_5> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_4> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_3> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_2> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_1> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/counter/q_0> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/state/q_0> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <play_button_press_unit/debounce/state/q_1> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/mcu/play_ff/q_0> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:1710 - FF/Latch <music_player/song_reader/note_tmr/tmr_ff/q_3> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_3> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_3> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/note_tmr/tmr_ff/q_3> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <music_player/song_reader/note_tmr/tmr_ff/q_2> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_2> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_2> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/note_tmr/tmr_ff/q_2> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <music_player/song_reader/note_tmr/tmr_ff/q_1> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <music_player/song_reader/note_tmr/tmr_ff/q_0> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <music_player/beat_generator/counter/q_0> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/beat_generator/counter/q_1> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/beat_generator/counter/q_2> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/beat_generator/counter/q_3> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/beat_generator/counter/q_4> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/beat_generator/counter/q_5> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/beat_generator/counter/q_6> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/beat_generator/counter/q_7> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/beat_generator/counter/q_8> of sequential type is unconnected in block <lab5_top>.
-WARNING:Xst:2677 - Node <music_player/beat_generator/counter/q_9> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:1293 - FF/Latch <hdmi/i_hdmi_ddr_output/i_i2c_sender/divider_8> has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_18> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_19> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_20> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_21> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_0> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_1> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_2> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_3> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_4> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_6> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_7> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_8> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_9> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_10> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_11> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_12> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_13> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_0> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_1> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_2> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_3> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_4> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_6> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_7> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_8> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_9> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_10> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_11> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_12> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_13> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_14> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_15> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_16> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_three/sine_reader/sine_ff/q_17> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_10> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_11> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_12> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_13> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_14> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_15> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_16> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_17> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_18> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_19> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_20> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_21> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/song_reader/read_addr_ff/q_1> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/song_reader/read_addr_ff/q_2> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/song_reader/read_addr_ff/q_3> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/song_reader/read_addr_ff/q_4> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/song_reader/read_addr_ff/q_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/song_reader/read_addr_ff/q_6> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_14> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_15> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_16> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_17> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_18> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_19> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_20> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_two/sine_reader/sine_ff/q_21> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_0> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_1> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_2> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_3> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_4> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_5> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_6> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_7> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_8> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <music_player/chord_module/player_one/sine_reader/sine_ff/q_9> (without init value) has a constant value of 0 in block <lab5_top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <hdmi/i_hdmi_ddr_output/i_i2c_sender/clk_last_quarter_28> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:2677 - Node <hdmi/i_hdmi_ddr_output/i_i2c_sender/clk_last_quarter_27> of sequential type is unconnected in block <lab5_top>.
 WARNING:Xst:2677 - Node <hdmi/i_hdmi_ddr_output/i_i2c_sender/clk_last_quarter_26> of sequential type is unconnected in block <lab5_top>.
@@ -1745,10 +1546,14 @@ INFO:Xst:2261 - The FF/Latch <hdmi/i_convert_444_422/g1_out_8> in Unit <lab5_top
 INFO:Xst:2261 - The FF/Latch <hdmi/valid> in Unit <lab5_top> is equivalent to the following FF/Latch, which will be removed : <hdmi/i_convert_444_422/d_a> 
 INFO:Xst:2261 - The FF/Latch <hdmi/i_vga_generator/b_7> in Unit <lab5_top> is equivalent to the following 23 FFs/Latches, which will be removed : <hdmi/i_vga_generator/b_6> <hdmi/i_vga_generator/b_5> <hdmi/i_vga_generator/b_4> <hdmi/i_vga_generator/b_3> <hdmi/i_vga_generator/b_2> <hdmi/i_vga_generator/b_1> <hdmi/i_vga_generator/b_0> <hdmi/i_vga_generator/g_7> <hdmi/i_vga_generator/g_6> <hdmi/i_vga_generator/g_5> <hdmi/i_vga_generator/g_4> <hdmi/i_vga_generator/g_3> <hdmi/i_vga_generator/g_2> <hdmi/i_vga_generator/g_1> <hdmi/i_vga_generator/g_0> <hdmi/i_vga_generator/r_7> <hdmi/i_vga_generator/r_6> <hdmi/i_vga_generator/r_5> <hdmi/i_vga_generator/r_4> <hdmi/i_vga_generator/r_3> <hdmi/i_vga_generator/r_2> <hdmi/i_vga_generator/r_1> <hdmi/i_vga_generator/r_0> 
 INFO:Xst:2261 - The FF/Latch <hdmi/vga_b_3> in Unit <lab5_top> is equivalent to the following 24 FFs/Latches, which will be removed : <hdmi/vga_b_2> <hdmi/vga_b_1> <hdmi/vga_b_0> <hdmi/vga_g_3> <hdmi/vga_g_2> <hdmi/vga_g_1> <hdmi/vga_g_0> <hdmi/vga_r_3> <hdmi/vga_r_2> <hdmi/vga_r_1> <hdmi/vga_r_0> <hdmi/i_convert_444_422/g_a_3> <hdmi/i_convert_444_422/g_a_2> <hdmi/i_convert_444_422/g_a_1> <hdmi/i_convert_444_422/g_a_0> <hdmi/i_convert_444_422/r_a_3> <hdmi/i_convert_444_422/r_a_2> <hdmi/i_convert_444_422/r_a_1> <hdmi/i_convert_444_422/r_a_0> <hdmi/i_convert_444_422/b_a_7> <hdmi/i_convert_444_422/b_a_3> <hdmi/i_convert_444_422/b_a_2> <hdmi/i_convert_444_422/b_a_1> <hdmi/i_convert_444_422/b_a_0> 
+INFO:Xst:2261 - The FF/Latch <music_player/chord_module/player_one/sample_ready_ff/q_0> in Unit <lab5_top> is equivalent to the following 2 FFs/Latches, which will be removed : <music_player/chord_module/player_two/sample_ready_ff/q_0> <music_player/chord_module/player_three/sample_ready_ff/q_0> 
 INFO:Xst:2261 - The FF/Latch <hdmi/vga_hs> in Unit <lab5_top> is equivalent to the following FF/Latch, which will be removed : <hdmi/i_convert_444_422/h_a> 
 INFO:Xst:2261 - The FF/Latch <hdmi/i_convert_444_422/r2_out_0> in Unit <lab5_top> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi/i_convert_444_422/b2_out_0> <hdmi/i_convert_444_422/g2_out_0> 
 INFO:Xst:2261 - The FF/Latch <hdmi/i_convert_444_422/r2_out_7> in Unit <lab5_top> is equivalent to the following 20 FFs/Latches, which will be removed : <hdmi/i_convert_444_422/r2_out_6> <hdmi/i_convert_444_422/r2_out_5> <hdmi/i_convert_444_422/r2_out_4> <hdmi/i_convert_444_422/r2_out_3> <hdmi/i_convert_444_422/r2_out_2> <hdmi/i_convert_444_422/r2_out_1> <hdmi/i_convert_444_422/b2_out_7> <hdmi/i_convert_444_422/b2_out_6> <hdmi/i_convert_444_422/b2_out_5> <hdmi/i_convert_444_422/b2_out_4> <hdmi/i_convert_444_422/b2_out_3> <hdmi/i_convert_444_422/b2_out_2> <hdmi/i_convert_444_422/b2_out_1> <hdmi/i_convert_444_422/g2_out_7> <hdmi/i_convert_444_422/g2_out_6> <hdmi/i_convert_444_422/g2_out_5> <hdmi/i_convert_444_422/g2_out_4> <hdmi/i_convert_444_422/g2_out_3> <hdmi/i_convert_444_422/g2_out_2> <hdmi/i_convert_444_422/g2_out_1> 
 INFO:Xst:2261 - The FF/Latch <hdmi/i_convert_444_422/r2_out_8> in Unit <lab5_top> is equivalent to the following 2 FFs/Latches, which will be removed : <hdmi/i_convert_444_422/b2_out_8> <hdmi/i_convert_444_422/g2_out_8> 
+INFO:Xst:2261 - The FF/Latch <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_0> in Unit <lab5_top> is equivalent to the following 2 FFs/Latches, which will be removed : <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_0> <music_player/chord_module/player_three/sine_reader/note_tmr/tmr_ff/q_0> 
+INFO:Xst:2261 - The FF/Latch <music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_1> in Unit <lab5_top> is equivalent to the following 2 FFs/Latches, which will be removed : <music_player/chord_module/player_two/sine_reader/note_tmr/tmr_ff/q_1> <music_player/chord_module/player_three/sine_reader/note_tmr/tmr_ff/q_1> 
+INFO:Xst:2261 - The FF/Latch <music_player/chord_module/player_one/sine_reader/ready_ff/q_0> in Unit <lab5_top> is equivalent to the following 2 FFs/Latches, which will be removed : <music_player/chord_module/player_two/sine_reader/ready_ff/q_0> <music_player/chord_module/player_three/sine_reader/ready_ff/q_0> 
 INFO:Xst:2261 - The FF/Latch <hdmi/vga_vs> in Unit <lab5_top> is equivalent to the following FF/Latch, which will be removed : <hdmi/i_convert_444_422/v_a> 
 INFO:Xst:3203 - The FF/Latch <hdmi/i_hdmi_ddr_output/i_i2c_sender/data_sr_1> in Unit <lab5_top> is the opposite to the following FF/Latch, which will be removed : <hdmi/i_hdmi_ddr_output/i_i2c_sender/tristate_sr_2> 
 INFO:Xst:3203 - The FF/Latch <hdmi/i_hdmi_ddr_output/i_i2c_sender/tristate_sr_1> in Unit <lab5_top> is the opposite to the following FF/Latch, which will be removed : <hdmi/i_hdmi_ddr_output/i_i2c_sender/clk_last_quarter_1> 
@@ -1756,12 +1561,13 @@ INFO:Xst:2261 - The FF/Latch <hdmi/vga_b_3> in Unit <lab5_top> is equivalent to 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block lab5_top, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block lab5_top, actual ratio is 2.
 
 Final Macro Processing ...
 
 Processing Unit <lab5_top> :
 	Found 3-bit shift register for signal <next_button_press_unit/sync/ff3/q_0>.
+	Found 3-bit shift register for signal <play_button_press_unit/sync/ff3/q_0>.
 	Found 7-bit shift register for signal <hdmi/i_hdmi_ddr_output/hdmi_vsync>.
 	Found 7-bit shift register for signal <hdmi/i_hdmi_ddr_output/hdmi_hsync>.
 	Found 9-bit shift register for signal <adau1761_codec/i2c_interface/Inst_i2s_data_interface/bclk_delay_1>.
@@ -1772,10 +1578,10 @@ Unit <lab5_top> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 497
- Flip-Flops                                            : 497
-# Shift Registers                                      : 5
- 3-bit shift register                                  : 1
+# Registers                                            : 667
+ Flip-Flops                                            : 667
+# Shift Registers                                      : 6
+ 3-bit shift register                                  : 2
  5-bit shift register                                  : 1
  7-bit shift register                                  : 2
  9-bit shift register                                  : 1
@@ -1801,34 +1607,34 @@ Top Level Output File Name         : lab5_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 994
+# BELS                             : 1797
 #      GND                         : 1
-#      INV                         : 26
-#      LUT1                        : 86
-#      LUT2                        : 91
-#      LUT3                        : 108
-#      LUT4                        : 72
-#      LUT5                        : 75
-#      LUT6                        : 256
-#      MUXCY                       : 133
-#      MUXF7                       : 10
+#      INV                         : 79
+#      LUT1                        : 180
+#      LUT2                        : 138
+#      LUT3                        : 258
+#      LUT4                        : 58
+#      LUT5                        : 175
+#      LUT6                        : 234
+#      MUXCY                       : 342
+#      MUXF7                       : 3
 #      VCC                         : 1
-#      XORCY                       : 135
-# FlipFlops/Latches                : 512
-#      FD                          : 206
-#      FDE                         : 151
-#      FDR                         : 55
-#      FDRE                        : 61
+#      XORCY                       : 328
+# FlipFlops/Latches                : 683
+#      FD                          : 240
+#      FDE                         : 152
+#      FDR                         : 181
+#      FDRE                        : 71
 #      FDSE                        : 29
 #      ODDR                        : 10
 # RAMS                             : 6
 #      RAMB18E1                    : 6
-# Shift Registers                  : 5
-#      SRLC16E                     : 5
+# Shift Registers                  : 6
+#      SRLC16E                     : 6
 # Clock Buffers                    : 3
 #      BUFG                        : 3
-# IO Buffers                       : 55
-#      IBUF                        : 5
+# IO Buffers                       : 56
+#      IBUF                        : 6
 #      IOBUF                       : 1
 #      OBUF                        : 48
 #      OBUFT                       : 1
@@ -1841,26 +1647,26 @@ Primitive and Black Box Usage:
 Device utilization summary:
 ---------------------------
 
-Selected Device : 7z020clg484-3 
+Selected Device : 7z020clg484-1 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             512  out of  106400     0%  
- Number of Slice LUTs:                  719  out of  53200     1%  
-    Number used as Logic:               714  out of  53200     1%  
-    Number used as Memory:                5  out of  17400     0%  
-       Number used as SRL:                5
+ Number of Slice Registers:             683  out of  106400     0%  
+ Number of Slice LUTs:                 1128  out of  53200     2%  
+    Number used as Logic:              1122  out of  53200     2%  
+    Number used as Memory:                6  out of  17400     0%  
+       Number used as SRL:                6
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    813
-   Number with an unused Flip Flop:     301  out of    813    37%  
-   Number with an unused LUT:            94  out of    813    11%  
-   Number of fully used LUT-FF pairs:   418  out of    813    51%  
-   Number of unique control sets:        25
+ Number of LUT Flip Flop pairs used:   1223
+   Number with an unused Flip Flop:     540  out of   1223    44%  
+   Number with an unused LUT:            95  out of   1223     7%  
+   Number of fully used LUT-FF pairs:   588  out of   1223    48%  
+   Number of unique control sets:        27
 
 IO Utilization: 
  Number of IOs:                          58
- Number of bonded IOBs:                  55  out of    200    27%  
+ Number of bonded IOBs:                  56  out of    200    28%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                3  out of    140     2%  
@@ -1889,7 +1695,7 @@ Clock Information:
 --------------------------------------+------------------------+-------+
 Clock Signal                          | Clock buffer(FF name)  | Load  |
 --------------------------------------+------------------------+-------+
-clk_100                               | PLLE2_ADV:CLKOUT1      | 450   |
+clk_100                               | PLLE2_ADV:CLKOUT1      | 622   |
 adau1761_codec/codec_clock_gen/clkout0| BUFG                   | 78    |
 clk_100                               | PLLE2_ADV:CLKOUT2      | 1     |
 --------------------------------------+------------------------+-------+
@@ -1905,12 +1711,12 @@ wd_top/write_en(wd_top/wc/write_enable1:O)               | NONE(wd_top/sample_ra
 
 Timing Summary:
 ---------------
-Speed Grade: -3
+Speed Grade: -1
 
-   Minimum period: 3.588ns (Maximum Frequency: 278.738MHz)
-   Minimum input arrival time before clock: 1.913ns
-   Maximum output required time after clock: 1.088ns
-   Maximum combinational path delay: 0.391ns
+   Minimum period: 4.944ns (Maximum Frequency: 202.265MHz)
+   Minimum input arrival time before clock: 2.707ns
+   Maximum output required time after clock: 1.515ns
+   Maximum combinational path delay: 0.560ns
 
 Timing Details:
 ---------------
@@ -1918,80 +1724,82 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_100'
-  Clock period: 3.571ns (frequency: 280.047MHz)
-  Total number of paths / destination ports: 9074 / 1047
+  Clock period: 4.944ns (frequency: 202.265MHz)
+  Total number of paths / destination ports: 31543 / 1396
 -------------------------------------------------------------------------
-Delay:               3.571ns (Levels of Logic = 3)
+Delay:               4.944ns (Levels of Logic = 4)
   Source:            music_player/song_reader_song_rom/Mram_addr[6]_memory[127][15]_wide_mux_1_OUT (RAM)
-  Destination:       music_player/song_reader/read_addr_ff/q_0 (FF)
+  Destination:       music_player/chord_module/player_one/sine_reader/sine_ff/q_21 (FF)
   Source Clock:      clk_100 rising
   Destination Clock: clk_100 rising
 
-  Data Path: music_player/song_reader_song_rom/Mram_addr[6]_memory[127][15]_wide_mux_1_OUT to music_player/song_reader/read_addr_ff/q_0
+  Data Path: music_player/song_reader_song_rom/Mram_addr[6]_memory[127][15]_wide_mux_1_OUT to music_player/chord_module/player_one/sine_reader/sine_ff/q_21
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB18E1:CLKARDCLK->DOADO14    1   1.846   0.550  music_player/song_reader_song_rom/Mram_addr[6]_memory[127][15]_wide_mux_1_OUT (music_player/song_reader/rom_output<14>)
-     LUT6:I0->O           50   0.043   0.453  music_player/reset_reset_player_OR_58_o4 (music_player/reset_reset_player_OR_58_o4)
-     LUT5:I3->O           12   0.043   0.593  music_player/reset_reset_player_OR_58_o5 (music_player/reset_reset_player_OR_58_o)
-     LUT5:I0->O            1   0.043   0.000  music_player/song_reader/read_addr_ff/q_0_rstpot (music_player/song_reader/read_addr_ff/q_0_rstpot)
-     FD:D                     -0.001          music_player/song_reader/read_addr_ff/q_0
+     RAMB18E1:CLKARDCLK->DOADO14   20   2.454   0.864  music_player/song_reader_song_rom/Mram_addr[6]_memory[127][15]_wide_mux_1_OUT (music_player/note_to_play<4>)
+     LUT6:I0->O            3   0.053   0.427  music_player/song_reader/song_done4 (music_player/song_reader/song_done3)
+     LUT6:I5->O            3   0.053   0.427  music_player/reset_reset_player_OR_58_o1_1 (music_player/reset_reset_player_OR_58_o1)
+     LUT6:I5->O           22   0.053   0.549  music_player/chord_module/player_one/sine_reader/reset_done_OR_62_o1 (music_player/chord_module/player_one/sine_reader/reset_done_OR_62_o)
+     LUT5:I4->O            1   0.053   0.000  music_player/chord_module/player_one/sine_reader/sine_ff/q_21_rstpot (music_player/chord_module/player_one/sine_reader/sine_ff/q_21_rstpot)
+     FD:D                      0.011          music_player/chord_module/player_one/sine_reader/sine_ff/q_21
     ----------------------------------------
-    Total                      3.571ns (1.975ns logic, 1.596ns route)
-                                       (55.3% logic, 44.7% route)
+    Total                      4.944ns (2.677ns logic, 2.267ns route)
+                                       (54.1% logic, 45.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'adau1761_codec/codec_clock_gen/clkout0'
-  Clock period: 3.588ns (frequency: 278.738MHz)
-  Total number of paths / destination ports: 5935 / 101
+  Clock period: 4.865ns (frequency: 205.550MHz)
+  Total number of paths / destination ports: 4075 / 101
 -------------------------------------------------------------------------
-Delay:               3.588ns (Levels of Logic = 4)
+Delay:               4.865ns (Levels of Logic = 4)
   Source:            adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373 (RAM)
-  Destination:       adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/skip (FF)
+  Destination:       adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state_FSM_FFd2 (FF)
   Source Clock:      adau1761_codec/codec_clock_gen/clkout0 rising
   Destination Clock: adau1761_codec/codec_clock_gen/clkout0 rising
 
-  Data Path: adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373 to adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/skip
+  Data Path: adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373 to adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB18E1:CLKARDCLK->DOADO2   17   1.846   0.530  adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373 (adau1761_codec/i2c_interface/Inst_i2c/inst_data<2>)
-     LUT4:I0->O            1   0.043   0.289  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_opcode<0>21_SW0 (N42)
-     LUT6:I5->O            2   0.043   0.461  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_opcode<0>21 (adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/opcode<1>)
-     LUT6:I2->O            1   0.043   0.289  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_state[3]_PWR_43_o_Mux_121_o11 (adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_state[3]_PWR_43_o_Mux_121_o1)
-     LUT5:I4->O            1   0.043   0.000  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_state[3]_PWR_43_o_Mux_121_o12 (adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state[3]_PWR_43_o_Mux_121_o)
-     FD:D                     -0.001          adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/skip
+     RAMB18E1:CLKARDCLK->DOADO1   12   2.454   0.707  adau1761_codec/i2c_interface/Inst_i2c_Inst_adau1761_configuraiton_data/Mram__n0373 (adau1761_codec/i2c_interface/Inst_i2c/inst_data<1>)
+     LUT4:I0->O            1   0.053   0.413  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_opcode<0>21_SW0 (N68)
+     LUT6:I5->O            3   0.053   0.649  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/Mmux_opcode<0>21 (adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/opcode<1>)
+     LUT5:I1->O            2   0.053   0.419  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state_FSM_FFd2-In31 (adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state_FSM_FFd2-In3)
+     LUT6:I5->O            1   0.053   0.000  adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state_FSM_FFd3-In4 (adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state_FSM_FFd3-In)
+     FD:D                      0.011          adau1761_codec/i2c_interface/Inst_i2c/Inst_i3c2/state_FSM_FFd3
     ----------------------------------------
-    Total                      3.588ns (2.018ns logic, 1.570ns route)
-                                       (56.2% logic, 43.8% route)
+    Total                      4.865ns (2.677ns logic, 2.188ns route)
+                                       (55.0% logic, 45.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100'
-  Total number of paths / destination ports: 150 / 148
+  Total number of paths / destination ports: 321 / 319
 -------------------------------------------------------------------------
-Offset:              1.913ns (Levels of Logic = 4)
+Offset:              2.707ns (Levels of Logic = 5)
   Source:            btn_up (PAD)
-  Destination:       music_player/song_reader/read_addr_ff/q_0 (FF)
+  Destination:       music_player/chord_module/player_one/sine_reader/sine_ff/q_21 (FF)
   Destination Clock: clk_100 rising
 
-  Data Path: btn_up to music_player/song_reader/read_addr_ff/q_0
+  Data Path: btn_up to music_player/chord_module/player_one/sine_reader/sine_ff/q_21
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            61   0.000   0.540  btn_up_IBUF (btn_up_IBUF)
-     LUT3:I0->O           50   0.043   0.652  music_player/reset_reset_player_OR_58_o1 (music_player/reset_reset_player_OR_58_o1)
-     LUT5:I0->O           12   0.043   0.593  music_player/reset_reset_player_OR_58_o5 (music_player/reset_reset_player_OR_58_o)
-     LUT5:I0->O            1   0.043   0.000  music_player/song_reader/read_addr_ff/q_0_rstpot (music_player/song_reader/read_addr_ff/q_0_rstpot)
-     FD:D                     -0.001          music_player/song_reader/read_addr_ff/q_0
+     IBUF:I->O            71   0.000   0.763  btn_up_IBUF (btn_up_IBUF)
+     LUT3:I0->O            2   0.053   0.745  music_player/song_reader/song_done5_SW0 (N158)
+     LUT6:I0->O            3   0.053   0.427  music_player/reset_reset_player_OR_58_o1_1 (music_player/reset_reset_player_OR_58_o1)
+     LUT6:I5->O           22   0.053   0.549  music_player/chord_module/player_one/sine_reader/reset_done_OR_62_o1 (music_player/chord_module/player_one/sine_reader/reset_done_OR_62_o)
+     LUT5:I4->O            1   0.053   0.000  music_player/chord_module/player_one/sine_reader/sine_ff/q_21_rstpot (music_player/chord_module/player_one/sine_reader/sine_ff/q_21_rstpot)
+     FD:D                      0.011          music_player/chord_module/player_one/sine_reader/sine_ff/q_21
     ----------------------------------------
-    Total                      1.913ns (0.129ns logic, 1.784ns route)
-                                       (6.7% logic, 93.3% route)
+    Total                      2.707ns (0.223ns logic, 2.484ns route)
+                                       (8.2% logic, 91.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'adau1761_codec/codec_clock_gen/clkout0'
   Total number of paths / destination ports: 20 / 20
 -------------------------------------------------------------------------
-Offset:              1.058ns (Levels of Logic = 3)
+Offset:              1.381ns (Levels of Logic = 3)
   Source:            AC_GPIO3 (PAD)
   Destination:       adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_55 (FF)
   Destination Clock: adau1761_codec/codec_clock_gen/clkout0 rising
@@ -2000,19 +1808,19 @@ Offset:              1.058ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            12   0.000   0.394  AC_GPIO3_IBUF (AC_GPIO3_IBUF)
-     LUT2:I0->O            7   0.043   0.578  adau1761_codec/i2c_interface/Inst_i2s_data_interface/i2s_lr_i2s_lr_last_AND_193_o1 (adau1761_codec/i2c_interface/Inst_i2s_data_interface/i2s_lr_i2s_lr_last_AND_193_o)
-     LUT6:I0->O            1   0.043   0.000  adau1761_codec/i2c_interface/Inst_i2s_data_interface/Mmux_sr_out[62]_audio_l_in[23]_mux_5_OUT431 (adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out[62]_audio_l_in[23]_mux_5_OUT<49>)
-     FDE:D                    -0.001          adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_49
+     IBUF:I->O            12   0.000   0.485  AC_GPIO3_IBUF (AC_GPIO3_IBUF)
+     LUT2:I1->O            7   0.053   0.779  adau1761_codec/i2c_interface/Inst_i2s_data_interface/i2s_lr_i2s_lr_last_AND_192_o1 (adau1761_codec/i2c_interface/Inst_i2s_data_interface/i2s_lr_i2s_lr_last_AND_192_o)
+     LUT6:I0->O            1   0.053   0.000  adau1761_codec/i2c_interface/Inst_i2s_data_interface/Mmux_sr_out[62]_audio_l_in[23]_mux_5_OUT431 (adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out[62]_audio_l_in[23]_mux_5_OUT<49>)
+     FDE:D                     0.011          adau1761_codec/i2c_interface/Inst_i2s_data_interface/sr_out_49
     ----------------------------------------
-    Total                      1.058ns (0.086ns logic, 0.972ns route)
-                                       (8.1% logic, 91.9% route)
+    Total                      1.381ns (0.117ns logic, 1.264ns route)
+                                       (8.5% logic, 91.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100'
   Total number of paths / destination ports: 46 / 36
 -------------------------------------------------------------------------
-Offset:              1.088ns (Levels of Logic = 2)
+Offset:              1.515ns (Levels of Logic = 2)
   Source:            music_player/codec_conditioner/new_frame_state/q_0 (FF)
   Destination:       leds_r<3> (PAD)
   Source Clock:      clk_100 rising
@@ -2021,18 +1829,18 @@ Offset:              1.088ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             22   0.232   0.524  music_player/codec_conditioner/new_frame_state/q_0 (music_player/codec_conditioner/new_frame_state/q_0)
-     LUT4:I1->O            3   0.043   0.289  music_player/codec_conditioner/Mmux_valid_sample161 (leds_r_3_OBUF)
+     FDR:C->Q             88   0.282   0.767  music_player/codec_conditioner/new_frame_state/q_0 (music_player/codec_conditioner/new_frame_state/q_0)
+     LUT4:I1->O            3   0.053   0.413  music_player/codec_conditioner/Mmux_valid_sample161 (leds_r_3_OBUF)
      OBUF:I->O                 0.000          leds_r_3_OBUF (leds_r<3>)
     ----------------------------------------
-    Total                      1.088ns (0.275ns logic, 0.813ns route)
-                                       (25.3% logic, 74.7% route)
+    Total                      1.515ns (0.335ns logic, 1.180ns route)
+                                       (22.1% logic, 77.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'adau1761_codec/codec_clock_gen/clkout0'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              1.005ns (Levels of Logic = 2)
+Offset:              1.398ns (Levels of Logic = 2)
   Source:            adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample (FF)
   Destination:       leds_r<3> (PAD)
   Source Clock:      adau1761_codec/codec_clock_gen/clkout0 rising
@@ -2041,18 +1849,18 @@ Offset:              1.005ns (Levels of Logic = 2)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              23   0.232   0.441  adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample (adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample)
-     LUT4:I2->O            3   0.043   0.289  music_player/codec_conditioner/Mmux_valid_sample161 (leds_r_3_OBUF)
+     FD:C->Q              89   0.282   0.650  adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample (adau1761_codec/i2c_interface/Inst_i2s_data_interface/new_sample)
+     LUT4:I2->O            3   0.053   0.413  music_player/codec_conditioner/Mmux_valid_sample161 (leds_r_3_OBUF)
      OBUF:I->O                 0.000          leds_r_3_OBUF (leds_r<3>)
     ----------------------------------------
-    Total                      1.005ns (0.275ns logic, 0.730ns route)
-                                       (27.4% logic, 72.6% route)
+    Total                      1.398ns (0.335ns logic, 1.063ns route)
+                                       (24.0% logic, 76.0% route)
 
 =========================================================================
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Delay:               0.391ns (Levels of Logic = 1)
+Delay:               0.560ns (Levels of Logic = 1)
   Source:            btn_up (PAD)
   Destination:       adau1761_codec/codec_clock_gen/mmcm_adv_inst:RST (PAD)
 
@@ -2060,10 +1868,10 @@ Delay:               0.391ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            61   0.000   0.391  btn_up_IBUF (btn_up_IBUF)
+     IBUF:I->O            71   0.000   0.560  btn_up_IBUF (btn_up_IBUF)
     MMCME2_ADV:RST             0.000          adau1761_codec/codec_clock_gen/mmcm_adv_inst
     ----------------------------------------
-    Total                      0.391ns (0.000ns logic, 0.391ns route)
+    Total                      0.560ns (0.000ns logic, 0.560ns route)
                                        (0.0% logic, 100.0% route)
 
 =========================================================================
@@ -2076,8 +1884,8 @@ Clock to Setup on destination clock adau1761_codec/codec_clock_gen/clkout0
                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------------+---------+---------+---------+---------+
-adau1761_codec/codec_clock_gen/clkout0|    3.588|         |         |         |
-clk_100                               |    1.141|         |         |         |
+adau1761_codec/codec_clock_gen/clkout0|    4.865|         |         |         |
+clk_100                               |    1.593|         |         |         |
 --------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk_100
@@ -2085,21 +1893,21 @@ Clock to Setup on destination clock clk_100
                                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------------+---------+---------+---------+---------+
-adau1761_codec/codec_clock_gen/clkout0|    1.352|         |         |         |
-clk_100                               |    3.571|         |         |         |
+adau1761_codec/codec_clock_gen/clkout0|    1.757|         |         |         |
+clk_100                               |    4.944|         |         |         |
 --------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 24.00 secs
-Total CPU time to Xst completion: 23.72 secs
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 24.98 secs
  
 --> 
 
-Total memory usage is 299844 kilobytes
+Total memory usage is 297364 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  519 (   0 filtered)
+Number of warnings :  330 (   0 filtered)
 Number of infos    :   47 (   0 filtered)
 

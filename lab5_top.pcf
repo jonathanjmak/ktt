@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Wed Nov 29 10:54:38 2017
+// Written by: Map P.20131013 on Fri Dec 01 14:13:32 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -90,6 +90,7 @@ PIN
 PIN hdmi/PLLE2_BASE_inst_pins<2> = BEL "hdmi/PLLE2_BASE_inst" PINNAME CLKIN1;
 TIMEGRP clk_100 = BEL
         "next_button_press_unit/one_pulse/last_value_storage/q_0" BEL
+        "play_button_press_unit/one_pulse/last_value_storage/q_0" BEL
         "led_div/q_0" BEL "led_div/q_1" BEL "led_div/q_2" BEL "led_div/q_3"
         BEL "led_div/q_4" BEL "led_div/q_5" BEL "led_div/q_6" BEL
         "led_div/q_7" BEL "led_div/q_8" BEL "led_div/q_9" BEL "led_div/q_10"
@@ -98,8 +99,39 @@ TIMEGRP clk_100 = BEL
         "led_div/q_17" BEL "led_div/q_18" BEL "led_div/q_19" BEL
         "led_div/q_20" BEL "led_div/q_21" BEL "led_div/q_22" BEL
         "led_div/q_23" BEL "led_div/q_24" BEL "led_div/q_25" BEL
-        "led_div/q_26" PIN
+        "led_div/q_26" BEL "music_player/beat_generator/counter/q_0" BEL
+        "music_player/beat_generator/counter/q_1" BEL
+        "music_player/beat_generator/counter/q_2" BEL
+        "music_player/beat_generator/counter/q_3" BEL
+        "music_player/beat_generator/counter/q_4" BEL
+        "music_player/beat_generator/counter/q_5" BEL
+        "music_player/beat_generator/counter/q_6" BEL
+        "music_player/beat_generator/counter/q_7" BEL
+        "music_player/beat_generator/counter/q_8" BEL
+        "music_player/beat_generator/counter/q_9" PIN
         "adau1761_codec/codec_clock_gen/mmcm_adv_inst_pins<2>" BEL
+        "play_button_press_unit/debounce/counter/q_19" BEL
+        "play_button_press_unit/debounce/counter/q_18" BEL
+        "play_button_press_unit/debounce/counter/q_17" BEL
+        "play_button_press_unit/debounce/counter/q_16" BEL
+        "play_button_press_unit/debounce/counter/q_15" BEL
+        "play_button_press_unit/debounce/counter/q_14" BEL
+        "play_button_press_unit/debounce/counter/q_13" BEL
+        "play_button_press_unit/debounce/counter/q_12" BEL
+        "play_button_press_unit/debounce/counter/q_11" BEL
+        "play_button_press_unit/debounce/counter/q_10" BEL
+        "play_button_press_unit/debounce/counter/q_9" BEL
+        "play_button_press_unit/debounce/counter/q_8" BEL
+        "play_button_press_unit/debounce/counter/q_7" BEL
+        "play_button_press_unit/debounce/counter/q_6" BEL
+        "play_button_press_unit/debounce/counter/q_5" BEL
+        "play_button_press_unit/debounce/counter/q_4" BEL
+        "play_button_press_unit/debounce/counter/q_3" BEL
+        "play_button_press_unit/debounce/counter/q_2" BEL
+        "play_button_press_unit/debounce/counter/q_1" BEL
+        "play_button_press_unit/debounce/counter/q_0" BEL
+        "play_button_press_unit/debounce/state/q_0" BEL
+        "play_button_press_unit/debounce/state/q_1" BEL
         "next_button_press_unit/debounce/counter/q_19" BEL
         "next_button_press_unit/debounce/counter/q_18" BEL
         "next_button_press_unit/debounce/counter/q_17" BEL
@@ -122,12 +154,134 @@ TIMEGRP clk_100 = BEL
         "next_button_press_unit/debounce/counter/q_0" BEL
         "next_button_press_unit/debounce/state/q_0" BEL
         "next_button_press_unit/debounce/state/q_1" BEL
+        "music_player/mcu/play_ff/q_0" BEL
         "music_player/song_reader/state_ff/q_0" BEL
         "music_player/song_reader/state_ff/q_1" BEL
         "music_player/song_reader/state_ff/q_2" BEL
-        "music_player/chord_module/player_three/sine_reader/note_tmr/tmr_ff/q_1"
+        "music_player/song_reader/read_addr_ff/q_6" BEL
+        "music_player/song_reader/read_addr_ff/q_5" BEL
+        "music_player/song_reader/read_addr_ff/q_4" BEL
+        "music_player/song_reader/read_addr_ff/q_3" BEL
+        "music_player/song_reader/read_addr_ff/q_2" BEL
+        "music_player/song_reader/read_addr_ff/q_1" BEL
+        "music_player/song_reader/read_addr_ff/q_0" BEL
+        "music_player/chord_module/player_three/note_tmr/tmr_ff/q_5" BEL
+        "music_player/chord_module/player_three/note_tmr/tmr_ff/q_4" BEL
+        "music_player/chord_module/player_three/note_tmr/tmr_ff/q_3" BEL
+        "music_player/chord_module/player_three/note_tmr/tmr_ff/q_2" BEL
+        "music_player/chord_module/player_three/note_tmr/tmr_ff/q_1" BEL
+        "music_player/chord_module/player_three/note_tmr/tmr_ff/q_0" BEL
+        "music_player/chord_module/player_two/note_tmr/tmr_ff/q_5" BEL
+        "music_player/chord_module/player_two/note_tmr/tmr_ff/q_4" BEL
+        "music_player/chord_module/player_two/note_tmr/tmr_ff/q_3" BEL
+        "music_player/chord_module/player_two/note_tmr/tmr_ff/q_2" BEL
+        "music_player/chord_module/player_two/note_tmr/tmr_ff/q_1" BEL
+        "music_player/chord_module/player_two/note_tmr/tmr_ff/q_0" BEL
+        "music_player/chord_module/player_one/note_tmr/tmr_ff/q_5" BEL
+        "music_player/chord_module/player_one/note_tmr/tmr_ff/q_4" BEL
+        "music_player/chord_module/player_one/note_tmr/tmr_ff/q_3" BEL
+        "music_player/chord_module/player_one/note_tmr/tmr_ff/q_2" BEL
+        "music_player/chord_module/player_one/note_tmr/tmr_ff/q_1" BEL
+        "music_player/chord_module/player_one/note_tmr/tmr_ff/q_0" BEL
+        "music_player/chord_module/player_three/load_ff/q_0" BEL
+        "music_player/chord_module/player_two/load_ff/q_0" BEL
+        "music_player/chord_module/player_one/load_ff/q_0" BEL
+        "music_player/chord_module/player_one/note_done_ff/q_0" BEL
+        "music_player/chord_module/player_one/sample_ready_ff/q_0" BEL
+        "music_player/chord_module/player_one/duration_ff/q_5" BEL
+        "music_player/chord_module/player_one/duration_ff/q_4" BEL
+        "music_player/chord_module/player_one/duration_ff/q_3" BEL
+        "music_player/chord_module/player_one/duration_ff/q_2" BEL
+        "music_player/chord_module/player_one/duration_ff/q_1" BEL
+        "music_player/chord_module/player_one/duration_ff/q_0" BEL
+        "music_player/chord_module/player_two/note_done_ff/q_0" BEL
+        "music_player/chord_module/player_two/duration_ff/q_5" BEL
+        "music_player/chord_module/player_two/duration_ff/q_4" BEL
+        "music_player/chord_module/player_two/duration_ff/q_3" BEL
+        "music_player/chord_module/player_two/duration_ff/q_2" BEL
+        "music_player/chord_module/player_two/duration_ff/q_1" BEL
+        "music_player/chord_module/player_two/duration_ff/q_0" BEL
+        "music_player/chord_module/player_three/note_done_ff/q_0" BEL
+        "music_player/chord_module/player_three/duration_ff/q_5" BEL
+        "music_player/chord_module/player_three/duration_ff/q_4" BEL
+        "music_player/chord_module/player_three/duration_ff/q_3" BEL
+        "music_player/chord_module/player_three/duration_ff/q_2" BEL
+        "music_player/chord_module/player_three/duration_ff/q_1" BEL
+        "music_player/chord_module/player_three/duration_ff/q_0" BEL
+        "music_player/chord_module/player_ff/q_0" BEL
+        "music_player/chord_module/player_ff/q_1" BEL
+        "music_player/chord_module/player_ff/q_2" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_18" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_17" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_16" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_15" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_14" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_13" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_12" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_11" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_10" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_9" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_8" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_7" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_6" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_5" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_4" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_3" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_2" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_1" BEL
+        "music_player/chord_module/player_three/frequency_rom/dout_0" BEL
+        "music_player/chord_module/player_one/sample_ff/q_15" BEL
+        "music_player/chord_module/player_one/sample_ff/q_14" BEL
+        "music_player/chord_module/player_one/sample_ff/q_13" BEL
+        "music_player/chord_module/player_one/sample_ff/q_12" BEL
+        "music_player/chord_module/player_one/sample_ff/q_11" BEL
+        "music_player/chord_module/player_one/sample_ff/q_10" BEL
+        "music_player/chord_module/player_one/sample_ff/q_9" BEL
+        "music_player/chord_module/player_one/sample_ff/q_8" BEL
+        "music_player/chord_module/player_one/sample_ff/q_7" BEL
+        "music_player/chord_module/player_one/sample_ff/q_6" BEL
+        "music_player/chord_module/player_one/sample_ff/q_5" BEL
+        "music_player/chord_module/player_one/sample_ff/q_4" BEL
+        "music_player/chord_module/player_one/sample_ff/q_3" BEL
+        "music_player/chord_module/player_one/sample_ff/q_2" BEL
+        "music_player/chord_module/player_one/sample_ff/q_1" BEL
+        "music_player/chord_module/player_one/sample_ff/q_0" BEL
+        "music_player/chord_module/player_two/sample_ff/q_15" BEL
+        "music_player/chord_module/player_two/sample_ff/q_14" BEL
+        "music_player/chord_module/player_two/sample_ff/q_13" BEL
+        "music_player/chord_module/player_two/sample_ff/q_12" BEL
+        "music_player/chord_module/player_two/sample_ff/q_11" BEL
+        "music_player/chord_module/player_two/sample_ff/q_10" BEL
+        "music_player/chord_module/player_two/sample_ff/q_9" BEL
+        "music_player/chord_module/player_two/sample_ff/q_8" BEL
+        "music_player/chord_module/player_two/sample_ff/q_7" BEL
+        "music_player/chord_module/player_two/sample_ff/q_6" BEL
+        "music_player/chord_module/player_two/sample_ff/q_5" BEL
+        "music_player/chord_module/player_two/sample_ff/q_4" BEL
+        "music_player/chord_module/player_two/sample_ff/q_3" BEL
+        "music_player/chord_module/player_two/sample_ff/q_2" BEL
+        "music_player/chord_module/player_two/sample_ff/q_1" BEL
+        "music_player/chord_module/player_two/sample_ff/q_0" BEL
+        "music_player/chord_module/player_three/sample_ff/q_15" BEL
+        "music_player/chord_module/player_three/sample_ff/q_14" BEL
+        "music_player/chord_module/player_three/sample_ff/q_13" BEL
+        "music_player/chord_module/player_three/sample_ff/q_12" BEL
+        "music_player/chord_module/player_three/sample_ff/q_11" BEL
+        "music_player/chord_module/player_three/sample_ff/q_10" BEL
+        "music_player/chord_module/player_three/sample_ff/q_9" BEL
+        "music_player/chord_module/player_three/sample_ff/q_8" BEL
+        "music_player/chord_module/player_three/sample_ff/q_7" BEL
+        "music_player/chord_module/player_three/sample_ff/q_6" BEL
+        "music_player/chord_module/player_three/sample_ff/q_5" BEL
+        "music_player/chord_module/player_three/sample_ff/q_4" BEL
+        "music_player/chord_module/player_three/sample_ff/q_3" BEL
+        "music_player/chord_module/player_three/sample_ff/q_2" BEL
+        "music_player/chord_module/player_three/sample_ff/q_1" BEL
+        "music_player/chord_module/player_three/sample_ff/q_0" BEL
+        "music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_1"
         BEL
-        "music_player/chord_module/player_three/sine_reader/note_tmr/tmr_ff/q_0"
+        "music_player/chord_module/player_one/sine_reader/note_tmr/tmr_ff/q_0"
+        BEL "music_player/chord_module/player_one/sine_reader/ready_ff/q_0"
         BEL "music_player/codec_conditioner/next_sample_latch/q_15" BEL
         "music_player/codec_conditioner/next_sample_latch/q_14" BEL
         "music_player/codec_conditioner/next_sample_latch/q_13" BEL
@@ -178,59 +332,76 @@ TIMEGRP clk_100 = BEL
         "wd_top/wd/addr_ff/q_1" BEL "wd_top/wd/addr_ff/q_0" BEL
         "music_player/codec_conditioner/new_frame_state/q_0" BEL
         "wd_top/wc/flip_read/q_0" BEL
-        "music_player/song_reader/read_addr_ff/q_0" BEL
-        "music_player/chord_module/player_three/sample_ready_ff/q_0" BEL
-        "music_player/chord_module/player_one/sample_ff/q_15" BEL
-        "music_player/chord_module/player_one/sample_ff/q_14" BEL
-        "music_player/chord_module/player_one/sample_ff/q_13" BEL
-        "music_player/chord_module/player_one/sample_ff/q_12" BEL
-        "music_player/chord_module/player_one/sample_ff/q_11" BEL
-        "music_player/chord_module/player_one/sample_ff/q_10" BEL
-        "music_player/chord_module/player_one/sample_ff/q_9" BEL
-        "music_player/chord_module/player_one/sample_ff/q_8" BEL
-        "music_player/chord_module/player_one/sample_ff/q_7" BEL
-        "music_player/chord_module/player_one/sample_ff/q_6" BEL
-        "music_player/chord_module/player_one/sample_ff/q_5" BEL
-        "music_player/chord_module/player_one/sample_ff/q_4" BEL
-        "music_player/chord_module/player_one/sample_ff/q_3" BEL
-        "music_player/chord_module/player_one/sample_ff/q_2" BEL
-        "music_player/chord_module/player_one/sample_ff/q_1" BEL
-        "music_player/chord_module/player_one/sample_ff/q_0" BEL
-        "music_player/chord_module/player_two/sample_ff/q_15" BEL
-        "music_player/chord_module/player_two/sample_ff/q_14" BEL
-        "music_player/chord_module/player_two/sample_ff/q_13" BEL
-        "music_player/chord_module/player_two/sample_ff/q_12" BEL
-        "music_player/chord_module/player_two/sample_ff/q_11" BEL
-        "music_player/chord_module/player_two/sample_ff/q_10" BEL
-        "music_player/chord_module/player_two/sample_ff/q_9" BEL
-        "music_player/chord_module/player_two/sample_ff/q_8" BEL
-        "music_player/chord_module/player_two/sample_ff/q_7" BEL
-        "music_player/chord_module/player_two/sample_ff/q_6" BEL
-        "music_player/chord_module/player_two/sample_ff/q_5" BEL
-        "music_player/chord_module/player_two/sample_ff/q_4" BEL
-        "music_player/chord_module/player_two/sample_ff/q_3" BEL
-        "music_player/chord_module/player_two/sample_ff/q_2" BEL
-        "music_player/chord_module/player_two/sample_ff/q_1" BEL
-        "music_player/chord_module/player_two/sample_ff/q_0" BEL
-        "music_player/chord_module/player_three/sample_ff/q_15" BEL
-        "music_player/chord_module/player_three/sample_ff/q_14" BEL
-        "music_player/chord_module/player_three/sample_ff/q_13" BEL
-        "music_player/chord_module/player_three/sample_ff/q_12" BEL
-        "music_player/chord_module/player_three/sample_ff/q_11" BEL
-        "music_player/chord_module/player_three/sample_ff/q_10" BEL
-        "music_player/chord_module/player_three/sample_ff/q_9" BEL
-        "music_player/chord_module/player_three/sample_ff/q_8" BEL
-        "music_player/chord_module/player_three/sample_ff/q_7" BEL
-        "music_player/chord_module/player_three/sample_ff/q_6" BEL
-        "music_player/chord_module/player_three/sample_ff/q_5" BEL
-        "music_player/chord_module/player_three/sample_ff/q_4" BEL
-        "music_player/chord_module/player_three/sample_ff/q_3" BEL
-        "music_player/chord_module/player_three/sample_ff/q_2" BEL
-        "music_player/chord_module/player_three/sample_ff/q_1" BEL
-        "music_player/chord_module/player_three/sample_ff/q_0" BEL
-        "music_player/chord_module/player_three/sine_reader/ready_ff/q_0" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_21" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_20" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_19" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_18" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_17" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_16" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_15" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_14" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_13" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_12" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_11" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_10" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_9" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_8" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_7" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_6" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_5" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_4" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_3" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_2" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_1" BEL
+        "music_player/chord_module/player_one/sine_reader/sine_ff/q_0" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_21" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_20" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_19" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_18" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_17" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_16" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_15" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_14" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_13" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_12" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_11" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_10" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_9" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_8" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_7" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_6" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_5" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_4" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_3" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_2" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_1" BEL
+        "music_player/chord_module/player_two/sine_reader/sine_ff/q_0" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_21" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_20" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_19" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_18" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_17" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_16" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_15" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_14" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_13" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_12" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_11" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_10" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_9" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_8" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_7" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_6" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_5" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_4" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_3" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_2" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_1" BEL
+        "music_player/chord_module/player_three/sine_reader/sine_ff/q_0" BEL
         "clk_100_IBUF_BUFG" BEL "next_button_press_unit/sync/ff3/Mshreg_q_0"
-        BEL "next_button_press_unit/sync/ff3/q_0" PIN
+        BEL "next_button_press_unit/sync/ff3/q_0" BEL
+        "play_button_press_unit/sync/ff3/Mshreg_q_0" BEL
+        "play_button_press_unit/sync/ff3/q_0" PIN
         "wd_top/sample_ram/Mram_RAM_pins<32>" PIN
         "wd_top/sample_ram/Mram_RAM_pins<33>" PIN
         "music_player/chord_module/player_one/sine_reader_sine_rom/Mram_addr[9]_memory[1023][15]_wide_mux_1_OUT_pins<32>"
@@ -551,11 +722,10 @@ TIMEGRP hdmi_clk = BEL "hdmi/vga_b_3" BEL "hdmi/vga_hs" BEL "hdmi/valid" BEL
         "hdmi/i_csc/y_out_0" BEL "hdmi/i_convert_444_422/flag" BEL
         "hdmi/i_vga_generator/hsync" BEL "hdmi/i_vga_generator/vsync" BEL
         "hdmi/i_hdmi_ddr_output/i_i2c_sender/finished" BEL
-        "hdmi/i_hdmi_ddr_output/Mshreg_hdmi_hsync" BEL
-        "hdmi/i_hdmi_ddr_output/hdmi_hsync" BEL
         "hdmi/i_hdmi_ddr_output/Mshreg_hdmi_vsync" BEL
         "hdmi/i_hdmi_ddr_output/hdmi_vsync" BEL "hdmi/i_csc/Mshreg_de_out" BEL
-        "hdmi/i_csc/de_out";
+        "hdmi/i_csc/de_out" BEL "hdmi/i_hdmi_ddr_output/Mshreg_hdmi_hsync" BEL
+        "hdmi/i_hdmi_ddr_output/hdmi_hsync";
 TIMEGRP hdmi_clk90 = BEL "hdmi/i_hdmi_ddr_output/ODDR_hdmi_clk";
 TS_clk_100 = PERIOD TIMEGRP "clk_100" 10 ns HIGH 50%;
 TS_adau1761_codec_codec_clock_gen_clkout0 = PERIOD TIMEGRP

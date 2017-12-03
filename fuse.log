@@ -8,15 +8,18 @@ Analyzing Verilog file "Z:/groups/01/Final_Project/sine_rom.v" into library work
 Analyzing Verilog file "Z:/groups/01/Final_Project/note_timer.v" into library work
 Analyzing Verilog file "Z:/groups/01/Final_Project/sine_reader.v" into library work
 Analyzing Verilog file "Z:/groups/01/Final_Project/frequency_rom.v" into library work
+Analyzing Verilog file "Z:/groups/01/Final_Project/codec_conditioner.v" into library work
 Analyzing Verilog file "Z:/groups/01/Final_Project/note_player.v" into library work
+Analyzing Verilog file "Z:/groups/01/Final_Project/dynamics.v" into library work
 Analyzing Verilog file "Z:/groups/01/Final_Project/chords.v" into library work
 Analyzing Verilog file "Z:/groups/01/Final_Project/chords_tb.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1016 - "Z:/groups/01/Final_Project/chords_tb.v" Line 16: Port player_ready is not connected to this instance
+WARNING:HDLCompiler:1016 - "Z:/groups/01/Final_Project/chords_tb.v" Line 17: Port player_ready is not connected to this instance
+WARNING:HDLCompiler:189 - "Z:/groups/01/Final_Project/dynamics.v" Line 49: Size mismatch in connection of port <d>. Formal port size is 14-bit while actual signal size is 5-bit.
 Completed static elaboration
-Fuse Memory Usage: 101816 KB
-Fuse CPU Usage: 343 ms
+Fuse Memory Usage: 105196 KB
+Fuse CPU Usage: 514 ms
 Compiling module dffr(WIDTH=3)
 Compiling module dffr(WIDTH=6)
 Compiling module note_timer
@@ -27,11 +30,17 @@ Compiling module dffre(WIDTH=22)
 Compiling module sine_rom
 Compiling module sine_reader
 Compiling module note_player
+Compiling module dffre
+Compiling module dffre(WIDTH=16)
+Compiling module codec_conditioner
+Compiling module dffre(WIDTH=5)
+Compiling module dffre(WIDTH=14)
+Compiling module dynamics
 Compiling module chords
 Compiling module chords_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Compiled 13 Verilog Units
+Compiled 19 Verilog Units
 Built simulation executable Z:/groups/01/Final_Project/chords_tb_isim_beh.exe
-Fuse Memory Usage: 131496 KB
-Fuse CPU Usage: 748 ms
+Fuse Memory Usage: 133852 KB
+Fuse CPU Usage: 1372 ms

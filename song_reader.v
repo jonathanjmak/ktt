@@ -20,10 +20,7 @@ module song_reader(
 
     wire [8:0] address;
 	 assign address = {song, curr_addr};
-	 
-	 wire on;
-	 dffr player_on(.clk(clk), .r(reset),.d(play), .q(on));
-	 
+	 	 
 	 wire [6:0] curr_addr;
 	 wire [6:0] next_addr;
 	 dffr #(7) read_addr_ff(.clk(clk), .r(reset), .d(next_addr), .q(curr_addr));
