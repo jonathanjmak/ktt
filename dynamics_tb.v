@@ -53,14 +53,12 @@ module dynamics_tb();
 
 	#30
 	
-	// Tests Attack controls.
 	attack = 6'b001100;
 	#30 new_note = 1'b1;
 	#10 new_note = 1'b0;
 
 	#6000
 
-	// Tests Decay controls.
 	decay = 6'b001100;
 	#10 new_note = 1'b1;
 	#10 new_note = 1'b0;
@@ -70,11 +68,8 @@ module dynamics_tb();
 	#30 new_note = 1'b1;
 	#10 new_note = 1'b0;
 
-
 	#6000
 	$finish;
-	
-
     end
       
 endmodule

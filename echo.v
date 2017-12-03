@@ -24,19 +24,19 @@ module echo (
 	// We write samples into the address tracked by this flip-flop; asserted when new_sample_ready is high.
 	wire [15:0] write_addr, read_addr;
 	wire write_reached_max = (write_addr == `MAX_TIME)? 1:0;
-	dffre #(16) w_adrr_ff (.clk(clk), .r(reset), .en(curr_sample_ready & ~delayed_sample_ready), 
+	dffre #(16) w_adrr_ff (.clk(clk), .r(reset|write_reached_max), .en(curr_sample_ready & ~delayed_sample_ready), 
 						   .d(write_addr + 16'b1), .q(write_addr));	
 
 	// We read samples from the address tracked by this flip-flop; on when counter has reached the maximum delay time.
 	wire read_reached_max = (read_addr == `MAX_TIME)? 1:0;
-	dffre #(16) r_adrr_ff (.clk(clk),.r(reset),
+	dffre #(16) r_adrr_ff (.clk(clk),.r(reset|read_reached_max),
 								 .en(read_enable & (new_sample_ready & ~curr_sample_ready)),
 								 .d(read_addr + 16'b1), .q(read_addr));
 	
 	// When read_enable goes high, we start reading samples from the RAM
 	// and combining it with the current sample into the note player.
 	wire [15:0] echoed_sample_out, modified_sample;
-	wire [15:0] invert_echo_divide = ~((~echoed_sample_out + 16'b1) >> 1)+16'b1;
+	wire [15:0] invert_echo_divide = ~((~echoed_sample_out + 16'b1) >> 1))+16'b1;
 	wire [15:0] modified_sample_cond = sample_in+(echoed_sample_out[15])? invert_echo_divide:(echoed_sample_out >>1);
 
 	assign modified_sample = reset? 16'b0:((read_enable & echo_enable) ?

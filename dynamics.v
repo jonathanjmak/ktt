@@ -44,7 +44,7 @@ module dynamics(
 					if (attack == 0) next_amp = amplitude_in;
 					else if (attack_4 > count) next_amp = 0;
 					else if (attack_4 <= count & attack_2 > count) next_amp = (amplitude_in < 3'd3)? 1:amplitude_in - 3'd4;
-					else if (attack_2 <= count & attack > count) next_amp = (amplitude_in == 0)? 0:amplitude_in - 3'd1;
+					else if (attack_2 <= count & attack > count) next_amp = (amplitude_in == 0)? 0:amplitude_in - 1;
 					else next_amp = amplitude_in;
 				end
 			`SUSTAIN: begin
@@ -54,9 +54,9 @@ module dynamics(
 			`DECAY: begin
 					next_state = (count==duration) ? `IDLE : `DECAY;
 					if(decay == 0) next_amp = amplitude_in;
-					else if(decay_4 > (duration - count)) next_amp = 0;
-					else if(decay_4 <= (duration - count) && decay_2 > (duration - count)) next_amp = (amplitude_in < 3'd3)? 1:amplitude_in - 3'd4;
-					else if(decay_2 <= (duration - count) && decay > (duration - count)) next_amp = (amplitude_in == 0)? 0:(amplitude_in - 1);
+					else if (decay_4 > (duration - count)) next_amp = 0;
+					else if (decay_4 <= (duration - count) && decay_2 > (duration - count)) next_amp = (amplitude_in < 3'd3)? 1:amplitude_in - 3'd4;
+					else if (decay_2 <= (duration - count) && decay > (duration - count)) next_amp = (amplitude_in == 0)? 0: amplitude_in - 1;
 					else next_amp = amplitude_in;
 				end
 			default: begin
@@ -66,6 +66,6 @@ module dynamics(
 		endcase
     end  
 
-    assign amplitude_out = (curr_amp==3'd0)? 3'd1:curr_amp;
+    assign amplitude_out = (curr_amp == 0)? 1:curr_amp;
 
 endmodule

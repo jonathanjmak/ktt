@@ -50,6 +50,7 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="echo.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="echo.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="echo.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="echo_tb.fdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="echo_tb_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="final_top.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="final_top.bld"/>
@@ -160,7 +161,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1512331426" xil_pn:in_ck="7596650074283931038" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1512331426">
+    <transform xil_pn:end_ts="1512332325" xil_pn:in_ck="7596650074283931038" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1512332325">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ADAU1761_interface.vhd"/>
@@ -229,11 +230,11 @@
       <outfile xil_pn:name="wave_display_top.v"/>
       <outfile xil_pn:name="zedboard_hdmi.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1512330939" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5715861024799591836" xil_pn:start_ts="1512330939">
+    <transform xil_pn:end_ts="1512332090" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7451228084714873707" xil_pn:start_ts="1512332090">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1512330939" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1984037816254106472" xil_pn:start_ts="1512330939">
+    <transform xil_pn:end_ts="1512332090" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-9191253277728910481" xil_pn:start_ts="1512332090">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -241,7 +242,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1512331426" xil_pn:in_ck="7596650074283931038" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1512331426">
+    <transform xil_pn:end_ts="1512332325" xil_pn:in_ck="7596650074283931038" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1512332325">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ADAU1761_interface.vhd"/>
@@ -310,10 +311,10 @@
       <outfile xil_pn:name="wave_display_top.v"/>
       <outfile xil_pn:name="zedboard_hdmi.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1512331427" xil_pn:in_ck="7596650074283931038" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="7467018039074122700" xil_pn:start_ts="1512331426">
+    <transform xil_pn:end_ts="1512332326" xil_pn:in_ck="7596650074283931038" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="7467018039074122700" xil_pn:start_ts="1512332325">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="dynamics_tb.fdo"/>
+      <outfile xil_pn:name="echo_tb.fdo"/>
     </transform>
     <transform xil_pn:end_ts="1512165541" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1512165541">
       <status xil_pn:value="SuccessfullyRun"/>
