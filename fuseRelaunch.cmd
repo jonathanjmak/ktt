@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "Z:/groups/01/Final_Project/chords_tb_isim_beh.exe" -prj "Z:/groups/01/Final_Project/chords_tb_beh.prj" "work.chords_tb" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/dynamics_tb_isim_beh.exe" -prj "/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/dynamics_tb_beh.prj" "work.dynamics_tb" "work.glbl" 

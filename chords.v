@@ -1,7 +1,6 @@
 module chords(
 	input clk,
 	input reset,
-	input new_frame,
 	input play,
 	input [5:0] note,
 	input [5:0] duration,
@@ -83,17 +82,6 @@ module chords(
         .new_sample_ready(sample_three_ready)
     );
 	 
-	dynamics dut(
-		.note_duration(duration),
-		.clk(clk),
-		.reset(reset),
-		.sample_start(sample_out_ndyn),
-		.done_with_note(player_ready),
-		.new_sample_ready(new_sample_ready),
-		.beat(beat),
-		.final_sample(sample_out),
-		.new_frame(new_frame)
-	);
 	// assign sample_out=sample_out_ndyn; //test without dynamics
 	assign new_sample_ready = sample_one_ready | sample_two_ready | sample_three_ready;
 	assign player_ready = player_one_done | player_two_done | player_three_done;

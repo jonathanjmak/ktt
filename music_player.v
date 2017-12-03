@@ -92,7 +92,6 @@ module music_player(
 		chords chord_module(	
 			.clk(clk), 
 			.reset(reset|reset_player),
-			.new_frame(new_frame),
 			.play(play),
 			.note(note_to_play),
 			.duration(duration_for_note),

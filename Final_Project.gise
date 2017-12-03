@@ -40,7 +40,12 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="dynamics.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="dynamics.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="dynamics.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="dynamics_controller_tb.fdo"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="dynamics_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="dynamics_tb.fdo"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="dynamics_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="dynamics_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="dynamics_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="dynamics_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="echo.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="echo.stx"/>
@@ -155,21 +160,80 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1512253943" xil_pn:in_ck="-8490466645436757089" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1512253942">
+    <transform xil_pn:end_ts="1512331426" xil_pn:in_ck="7596650074283931038" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1512331426">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="ADAU1761_interface.vhd"/>
+      <outfile xil_pn:name="ac97_if.v"/>
+      <outfile xil_pn:name="ac97_if_isim.v"/>
+      <outfile xil_pn:name="adau1761_codec.v"/>
+      <outfile xil_pn:name="adau1761_configuraiton_data.vhd"/>
+      <outfile xil_pn:name="adau1761_izedboard.vhd"/>
+      <outfile xil_pn:name="beat_generator.v"/>
+      <outfile xil_pn:name="brute_force_synchronizer.v"/>
+      <outfile xil_pn:name="button_press_unit.v"/>
+      <outfile xil_pn:name="chip_data_parser.v"/>
+      <outfile xil_pn:name="chords.v"/>
+      <outfile xil_pn:name="chords_tb.v"/>
+      <outfile xil_pn:name="clamp_channel.vhd"/>
+      <outfile xil_pn:name="clamper.vhd"/>
+      <outfile xil_pn:name="clocking.vhd"/>
+      <outfile xil_pn:name="codec_conditioner.v"/>
+      <outfile xil_pn:name="colour_space_conversion.vhd"/>
+      <outfile xil_pn:name="convert_444_422.vhd"/>
+      <outfile xil_pn:name="counter.v"/>
+      <outfile xil_pn:name="debouncer.v"/>
+      <outfile xil_pn:name="dvi_controller_top.v"/>
+      <outfile xil_pn:name="dvi_defines.v"/>
+      <outfile xil_pn:name="dynamics.v"/>
+      <outfile xil_pn:name="dynamics_tb.v"/>
+      <outfile xil_pn:name="echo.v"/>
+      <outfile xil_pn:name="echo_tb.v"/>
+      <outfile xil_pn:name="fake_sample_ram.v"/>
+      <outfile xil_pn:name="ff_lib.v"/>
+      <outfile xil_pn:name="frequency_rom.v"/>
+      <outfile xil_pn:name="hdmi_ddr_output.vhd"/>
+      <outfile xil_pn:name="i2c.vhd"/>
+      <outfile xil_pn:name="i2c_emulator.v"/>
+      <outfile xil_pn:name="i2c_sender.vhd"/>
+      <outfile xil_pn:name="i2s_data_interface.vhd"/>
+      <outfile xil_pn:name="i3c2.vhd"/>
+      <outfile xil_pn:name="lab5_top.v"/>
+      <outfile xil_pn:name="mcu.v"/>
+      <outfile xil_pn:name="mcu_tb.v"/>
+      <outfile xil_pn:name="multiplier.v"/>
+      <outfile xil_pn:name="music_player.v"/>
+      <outfile xil_pn:name="music_player_tb.v"/>
+      <outfile xil_pn:name="note_display.v"/>
+      <outfile xil_pn:name="note_player.v"/>
+      <outfile xil_pn:name="note_player_tb.v"/>
+      <outfile xil_pn:name="note_timer.v"/>
+      <outfile xil_pn:name="one_pulse.v"/>
+      <outfile xil_pn:name="ram_1w2r.v"/>
+      <outfile xil_pn:name="sine_reader.v"/>
+      <outfile xil_pn:name="sine_reader_tb.v"/>
+      <outfile xil_pn:name="sine_rom.v"/>
+      <outfile xil_pn:name="song_reader.v"/>
+      <outfile xil_pn:name="song_reader_tb.v"/>
+      <outfile xil_pn:name="song_rom.v"/>
+      <outfile xil_pn:name="sync_generators.v"/>
+      <outfile xil_pn:name="tcgrom.v"/>
+      <outfile xil_pn:name="vga_generator.vhd"/>
+      <outfile xil_pn:name="vga_hdmi.vhd"/>
+      <outfile xil_pn:name="visual_enhancements.v"/>
+      <outfile xil_pn:name="wait_state.v"/>
+      <outfile xil_pn:name="wave_capture.v"/>
+      <outfile xil_pn:name="wave_capture_tb.v"/>
+      <outfile xil_pn:name="wave_display.v"/>
+      <outfile xil_pn:name="wave_display_tb.v"/>
+      <outfile xil_pn:name="wave_display_top.v"/>
+      <outfile xil_pn:name="zedboard_hdmi.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1512253547" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="20756530558011695" xil_pn:start_ts="1512253547">
+    <transform xil_pn:end_ts="1512330939" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5715861024799591836" xil_pn:start_ts="1512330939">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1512253547" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7839183565496794419" xil_pn:start_ts="1512253547">
+    <transform xil_pn:end_ts="1512330939" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1984037816254106472" xil_pn:start_ts="1512330939">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -177,25 +241,79 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1512253943" xil_pn:in_ck="-8490466645436757089" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1512253943">
+    <transform xil_pn:end_ts="1512331426" xil_pn:in_ck="7596650074283931038" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1512331426">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="ADAU1761_interface.vhd"/>
+      <outfile xil_pn:name="ac97_if.v"/>
+      <outfile xil_pn:name="ac97_if_isim.v"/>
+      <outfile xil_pn:name="adau1761_codec.v"/>
+      <outfile xil_pn:name="adau1761_configuraiton_data.vhd"/>
+      <outfile xil_pn:name="adau1761_izedboard.vhd"/>
+      <outfile xil_pn:name="beat_generator.v"/>
+      <outfile xil_pn:name="brute_force_synchronizer.v"/>
+      <outfile xil_pn:name="button_press_unit.v"/>
+      <outfile xil_pn:name="chip_data_parser.v"/>
+      <outfile xil_pn:name="chords.v"/>
+      <outfile xil_pn:name="chords_tb.v"/>
+      <outfile xil_pn:name="clamp_channel.vhd"/>
+      <outfile xil_pn:name="clamper.vhd"/>
+      <outfile xil_pn:name="clocking.vhd"/>
+      <outfile xil_pn:name="codec_conditioner.v"/>
+      <outfile xil_pn:name="colour_space_conversion.vhd"/>
+      <outfile xil_pn:name="convert_444_422.vhd"/>
+      <outfile xil_pn:name="counter.v"/>
+      <outfile xil_pn:name="debouncer.v"/>
+      <outfile xil_pn:name="dvi_controller_top.v"/>
+      <outfile xil_pn:name="dvi_defines.v"/>
+      <outfile xil_pn:name="dynamics.v"/>
+      <outfile xil_pn:name="dynamics_tb.v"/>
+      <outfile xil_pn:name="echo.v"/>
+      <outfile xil_pn:name="echo_tb.v"/>
+      <outfile xil_pn:name="fake_sample_ram.v"/>
+      <outfile xil_pn:name="ff_lib.v"/>
+      <outfile xil_pn:name="frequency_rom.v"/>
+      <outfile xil_pn:name="hdmi_ddr_output.vhd"/>
+      <outfile xil_pn:name="i2c.vhd"/>
+      <outfile xil_pn:name="i2c_emulator.v"/>
+      <outfile xil_pn:name="i2c_sender.vhd"/>
+      <outfile xil_pn:name="i2s_data_interface.vhd"/>
+      <outfile xil_pn:name="i3c2.vhd"/>
+      <outfile xil_pn:name="lab5_top.v"/>
+      <outfile xil_pn:name="mcu.v"/>
+      <outfile xil_pn:name="mcu_tb.v"/>
+      <outfile xil_pn:name="multiplier.v"/>
+      <outfile xil_pn:name="music_player.v"/>
+      <outfile xil_pn:name="music_player_tb.v"/>
+      <outfile xil_pn:name="note_display.v"/>
+      <outfile xil_pn:name="note_player.v"/>
+      <outfile xil_pn:name="note_player_tb.v"/>
+      <outfile xil_pn:name="note_timer.v"/>
+      <outfile xil_pn:name="one_pulse.v"/>
+      <outfile xil_pn:name="ram_1w2r.v"/>
+      <outfile xil_pn:name="sine_reader.v"/>
+      <outfile xil_pn:name="sine_reader_tb.v"/>
+      <outfile xil_pn:name="sine_rom.v"/>
+      <outfile xil_pn:name="song_reader.v"/>
+      <outfile xil_pn:name="song_reader_tb.v"/>
+      <outfile xil_pn:name="song_rom.v"/>
+      <outfile xil_pn:name="sync_generators.v"/>
+      <outfile xil_pn:name="tcgrom.v"/>
+      <outfile xil_pn:name="vga_generator.vhd"/>
+      <outfile xil_pn:name="vga_hdmi.vhd"/>
+      <outfile xil_pn:name="visual_enhancements.v"/>
+      <outfile xil_pn:name="wait_state.v"/>
+      <outfile xil_pn:name="wave_capture.v"/>
+      <outfile xil_pn:name="wave_capture_tb.v"/>
+      <outfile xil_pn:name="wave_display.v"/>
+      <outfile xil_pn:name="wave_display_tb.v"/>
+      <outfile xil_pn:name="wave_display_top.v"/>
+      <outfile xil_pn:name="zedboard_hdmi.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1512254269" xil_pn:in_ck="-8490466645436757089" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="7467018039074122700" xil_pn:start_ts="1512254261">
+    <transform xil_pn:end_ts="1512331427" xil_pn:in_ck="7596650074283931038" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="7467018039074122700" xil_pn:start_ts="1512331426">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="dynamics_tb.fdo"/>
     </transform>
     <transform xil_pn:end_ts="1512165541" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1512165541">
       <status xil_pn:value="SuccessfullyRun"/>

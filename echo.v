@@ -12,7 +12,7 @@ module echo (
 	
 	wire curr_sample_ready, delayed_sample_ready;
 	dffr sample_ready_ff (.clk(clk),.r(reset),.d(new_sample_ready),.q(curr_sample_ready));
-   dffr delayed_sample_ready_ff (.clk(clk),.r(reset),.d(curr_sample_ready),.q(delayed_sample_ready));
+    dffr delayed_sample_ready_ff (.clk(clk),.r(reset),.d(curr_sample_ready),.q(delayed_sample_ready));
 	
 	wire [13:0] count;
 	dffre #(14) counter (.clk(clk), .r(reset), .en(~read_enable & (new_sample_ready & ~curr_sample_ready)), 
