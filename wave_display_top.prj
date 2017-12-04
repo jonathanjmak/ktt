@@ -1,0 +1,7 @@
+verilog work "tcgrom.v"
+verilog work "ff_lib.v"
+verilog work "wave_display.v"
+verilog work "wave_capture.v"
+verilog work "ram_1w2r.v"
+verilog work "note_display.v"
+verilog work "wave_display_top.v"

@@ -1,3 +1,5 @@
+`include "dvi_defines.v"
+
 module wave_display_top(
     input clk,
     input reset,
@@ -57,5 +59,23 @@ module wave_display_top(
     );
 
     assign {r, g, b} = valid_pixel ? {wd_r, wd_g, wd_b} : {3{8'b0}};
+
+// note display additions by Ben subject to change
+	
+	wire [63:0] character;
+
+   wire [`log2NUM_COLS-1:0] x_char;
+	assign x_char = {1'b0, x_char[`log2NUM_COLS-1:1]};
+	
+   wire [`log2NUM_ROWS-1:0] y_char;
+	assign y_char = {1'b0, y_char[`log2NUM_ROWS-1:1]};
+	
+	note_display show_note(
+      .clk(clk),
+      .rst(reset),
+      .value(character),
+      .x_char(x_char-16),
+      .y_char(y_char-24),
+   );
 
 endmodule

@@ -240,11 +240,5 @@ module lab5_top(
     //     .d(b_1),
     //     .q(b));
 
-// Ben's visual enhancements module
-//restructure possibly
-
-visual visual_enhancements(
-      .clk_100(clk_100)
-);
 endmodule
 

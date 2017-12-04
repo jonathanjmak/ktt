@@ -1,0 +1,70 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to Z:/groups/01/Final_Project/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to Z:/groups/01/Final_Project/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: wave_display_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\tcgrom.v" into library work
+Parsing module <tcgrom>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\ff_lib.v" into library work
+Parsing module <dff>.
+Parsing module <dffr>.
+Parsing module <dffre>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\wave_display.v" into library work
+Parsing module <wave_display>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\wave_capture.v" into library work
+Parsing module <wave_capture>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\ram_1w2r.v" into library work
+Parsing module <ram_1w2r>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\note_display.v" into library work
+Parsing verilog file "dvi_defines.v" included at line 2.
+Parsing module <note_display>.
+Analyzing Verilog file "\\afs\ir\class\ee108\groups\01\Final_Project\wave_display_top.v" into library work
+Parsing verilog file "dvi_defines.v" included at line 1.
+Parsing module <wave_display_top>.
+ERROR:HDLCompiler:718 - "\\afs\ir\class\ee108\groups\01\Final_Project\wave_display_top.v" Line 73: Port connections cannot be mixed ordered and named
+ERROR:HDLCompiler:598 - "\\afs\ir\class\ee108\groups\01\Final_Project\wave_display_top.v" Line 3: Module <wave_display_top> ignored due to previous errors.
+Verilog file \\afs\ir\class\ee108\groups\01\Final_Project\wave_display_top.v ignored due to errors
+--> 
+
+Total memory usage is 161792 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

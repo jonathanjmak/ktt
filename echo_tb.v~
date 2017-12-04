@@ -10,7 +10,7 @@ module echo_tb();
 	initial begin
 		clk = 1; #5 clk = 0;
 		forever begin
-			$display("r=%d, NSR=%d, ramin=%d, sin=%d, ramout=%d, sout=%d, count=%d, raddr=%d, waddr=%d, ", reset, new_sample_ready, dut.sample_adj, sample_in,
+			$display("r=%d, NSR=%d, ramin=%d, sin=%d, ramout=%d, sout=%d, count=%d, raddr=%d, waddr=%d, ", reset, new_sample_ready, dut.modified_sample, sample_in,
 			dut.echoed_sample_out, sample_to_codec, dut.count, dut.read_addr, dut.write_addr, dut.curr_sample_ready);
 			#5 clk = 1; #5 clk = 0;
 		end

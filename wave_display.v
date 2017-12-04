@@ -30,7 +30,7 @@ module wave_display (
 	assign valid_pixel = (valid &(x[9]^x[8])&~y[9]); // defined quadrant for pixels to be output
 	
 	wire valid_read; // read value in valid pixel region and adheres to constrained y values
-   assign valid_read = (valid_pixel &
+    assign valid_read = (valid_pixel &
 							  (((valid_y >= read_value)&(valid_y <= prev_read_value))|
 							  ((valid_y<=read_value) & (valid_y >= prev_read_value))));
 							  
