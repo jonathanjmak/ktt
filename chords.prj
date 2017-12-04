@@ -1,0 +1,6 @@
+verilog work "sine_rom.v"
+verilog work "ff_lib.v"
+verilog work "sine_reader.v"
+verilog work "frequency_rom.v"
+verilog work "note_player.v"
+verilog work "chords.v"

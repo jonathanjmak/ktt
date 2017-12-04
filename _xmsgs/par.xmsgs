@@ -20,11 +20,11 @@ Try the Design Goal and Strategies for Timing Performance(In ISE select Project 
 
 </msg>
 
-<msg type="warning" file="ParHelpers" num="361" delta="new" >There are <arg fmt="%d" index="1">2</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+<msg type="warning" file="ParHelpers" num="361" delta="old" >There are <arg fmt="%d" index="1">2</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
 </msg>
 
-<msg type="warning" file="Par" num="283" delta="new" >There are <arg fmt="%d" index="1">2</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+<msg type="warning" file="Par" num="283" delta="old" >There are <arg fmt="%d" index="1">2</arg> loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
 </msg>
 

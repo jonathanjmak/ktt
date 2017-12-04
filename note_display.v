@@ -1,8 +1,6 @@
 `timescale 1ns / 1ps
-`include "dvi_defines.v"
-
 module note_display(
-	input clk,
+  input clk,
   input [5:0] current_addr, // CHANGE THIS TO LARGER WIDTH WHEN WE EXTEND SONG ROM
   input [10:0] x,
   input [9:0] y,
@@ -28,7 +26,7 @@ assign previous_1_note = previous_1_data[14:9];
 assign previous_2_note = previous_2_data[14:9];
 
 reg [8:0] n1_note_addr, n2_note_addr, curr_note_addr, p1_note_addr, p2_note_addr;
-wire [23:0] n1_data,n2_data curr_data, p1_data, p2_data; // change tcgrom to be 24 bits wide (each note is 3 characters e.g. 3F#)
+wire [23:0] n1_data,n2_data, curr_data, p1_data, p2_data; // change tcgrom to be 24 bits wide (each note is 3 characters e.g. 3F#)
 
 tcgrom n1_note_char_rom(.addr(n1_note_addr), .data(n1_data));
 tcgrom n2_note_char_rom(.addr(n2_note_addr), .data(n2_data));

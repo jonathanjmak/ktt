@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="718" delta="new" >"\\afs\ir\class\ee108\groups\01\Final_Project\wave_display_top.v" Line 73: Port connections cannot be mixed ordered and named
+<msg type="error" file="HDLCompiler" num="329" delta="new" >"/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/chords.v" Line 153: Target &lt;<arg fmt="%s" index="1">sample_out</arg>&gt; of concurrent assignment or output port connection should be a net type.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="598" delta="new" >"\\afs\ir\class\ee108\groups\01\Final_Project\wave_display_top.v" Line 3: Module &lt;<arg fmt="%s" index="1">wave_display_top</arg>&gt; ignored due to previous errors.
+<msg type="error" file="HDLCompiler" num="598" delta="new" >"/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/chords.v" Line 89: Module &lt;<arg fmt="%s" index="1">chords</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>

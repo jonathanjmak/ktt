@@ -1,0 +1,10 @@
+Command line:
+   chords_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49334
+
+Mon Dec  4 08:43:31 2017
+
+
+ Elaboration Time: 0.4 sec

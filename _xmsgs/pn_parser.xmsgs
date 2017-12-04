@@ -8,14 +8,610 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/afs/.ir.stanford.edu/class/ee108/groups/01/Final_Project/note_display.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/song_rom.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">/afs/.ir.stanford.edu/class/ee108/groups/01/Final_Project/note_display.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/dvi_defines.v&apos; in file &quot;/afs/.ir.stanford.edu/class/ee108/groups/01/Final_Project/note_display.v&quot; line 2
-</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/song_rom.v</arg>&quot; Line <arg fmt="%d" index="2">677</arg>. <arg fmt="%s" index="3">Syntax error near &quot;2&quot;.</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/.ir.stanford.edu/class/ee108/groups/01/Final_Project/note_display.v</arg>&quot; Line <arg fmt="%d" index="2">31</arg>. <arg fmt="%s" index="3">Syntax error near &quot;curr_data&quot;.</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v&quot; into library work</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">589</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">590</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">591</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">592</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">593</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">594</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">595</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">596</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">598</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">599</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">600</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">601</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">602</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">603</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">604</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">605</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">607</arg>. <arg fmt="%s" index="3">Syntax error near &quot;{&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">608</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">609</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">610</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">611</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">612</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">613</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">614</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">615</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">616</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">617</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">618</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">619</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">620</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">621</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">622</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">623</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">624</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">625</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">626</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">627</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">628</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">629</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">630</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">631</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">632</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">633</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">634</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">635</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">636</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">637</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">638</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">639</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">640</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">641</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">642</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">643</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">644</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">645</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">646</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">647</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">648</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">649</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">650</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">651</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">652</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">653</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">654</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">655</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">656</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">657</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">658</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">659</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">660</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">661</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">662</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">663</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">664</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">665</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">666</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">667</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">668</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">669</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">670</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">671</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">672</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">673</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">674</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">675</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">676</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">677</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">678</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">679</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">680</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">681</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">682</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">683</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">684</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">685</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">686</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">687</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">688</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">689</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">690</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">691</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">692</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">693</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">694</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">695</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">696</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">697</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">698</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">699</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">700</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">701</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">702</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">703</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">704</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">705</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">706</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">707</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">708</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">709</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">710</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">711</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">712</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">713</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">714</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">715</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">716</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">717</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">718</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">719</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">720</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">721</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">722</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">723</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">724</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">725</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">726</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">727</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">728</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">729</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">730</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">731</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">732</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">733</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">734</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">735</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">736</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">737</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">738</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">739</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">740</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">741</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">742</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">743</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">744</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">745</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">746</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">747</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">748</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">749</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">750</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">751</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">752</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">753</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">754</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">755</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">756</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">757</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">758</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">759</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">760</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">761</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">762</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">763</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">764</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">765</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">766</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">767</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">768</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">769</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">770</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">771</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">772</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">773</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">774</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">775</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">776</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">777</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">778</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">779</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">780</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">781</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">782</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">783</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">784</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">785</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">786</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">787</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">788</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/tcgrom.v</arg>&quot; Line <arg fmt="%d" index="2">789</arg>. <arg fmt="%s" index="3">Syntax error near &quot;3&quot;.</arg>
 </msg>
 
 </messages>

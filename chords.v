@@ -8,22 +8,21 @@ module chords(
 	input beat,
 	input generate_next_sample,
 	output player_ready,
-	output [15:0] sample_out,
+	output reg [15:0] sample_out,
 	output new_sample_ready
 );
 
 	wire [15:0] sample_one, sample_two, sample_three;
 	wire player_one_done, player_two_done, player_three_done;
-	wire sample_one_ready, sample_two_ready, sample_three_ready;
 	wire [2:0] load_new_note;
 	reg [2:0] next_load_new_note;
+	wire [2:0] samples_ready;
 	
 	wire signed [17:0] avg;
 	assign avg = ($signed({sample_one, 2'b0})>>>2)+($signed({sample_two, 2'b0})>>>2)+($signed({sample_three, 2'b0})>>>2);
 
 	dffr #(3) player_ff(.clk(clk),.r(reset),.d(next_load_new_note),.q(load_new_note));
 
-	reg [15:0] sample_out_ndyn;
 	always @(*)begin
 		if (player_one_done) next_load_new_note = {new_note, 1'b0, 1'b0};
 		else if (player_two_done) next_load_new_note = {1'b0, new_note, 1'b0};
@@ -33,11 +32,11 @@ module chords(
 	
 	always @(*) begin
 		if (~(player_one_done & player_two_done & player_three_done))
-			sample_out_ndyn = avg[17:2];
+			sample_out = avg[17:2];
 		else if (~((player_one_done&player_two_done)|(player_two_done&player_three_done)|(player_one_done&player_three_done)))
-			sample_out_ndyn = avg[16:1];	
+			sample_out = avg[16:1];	
 		else
-			sample_out_ndyn = avg[15:0];
+			sample_out = avg[15:0];
 	end
 	
 	note_player player_one(
@@ -51,7 +50,7 @@ module chords(
         .beat(beat),
         .generate_next_sample(generate_next_sample),
         .sample_out(sample_one), // sample 1
-        .new_sample_ready(sample_one_ready)
+        .new_sample_ready(samples_ready[0])
     );
 	 
 	note_player player_two(
@@ -65,7 +64,7 @@ module chords(
         .beat(beat),
         .generate_next_sample(generate_next_sample),
         .sample_out(sample_two), // sample 2
-        .new_sample_ready(sample_two_ready)
+        .new_sample_ready(samples_ready[1])
     );
 	 
 	 note_player player_three(
@@ -79,10 +78,9 @@ module chords(
         .beat(beat),
         .generate_next_sample(generate_next_sample),
         .sample_out(sample_three), // sample 3
-        .new_sample_ready(sample_three_ready)
+        .new_sample_ready(samples_ready[2])
     );
-	 
-	// assign sample_out=sample_out_ndyn; //test without dynamics
-	assign new_sample_ready = sample_one_ready | sample_two_ready | sample_three_ready;
+	assign new_sample_ready = ~(samples_ready == 3'b0);
+
 	assign player_ready = player_one_done | player_two_done | player_three_done;
 endmodule

@@ -63,15 +63,27 @@ module music_player(
     wire [5:0] note_to_play;
     wire [5:0] duration_for_note;
     wire new_note;
-    wire note_done;
 	 wire player_ready;
 	 wire beat;
 
-	song_reader song_reader(
+//	song_reader song_reader(
+//		.clk(clk),
+//		.reset(reset | reset_player),
+//		.play(play),
+//		.player_ready(player_ready),
+//		.song(current_song),
+//		.beat(beat),
+//		.song_done(song_done),
+//		.note(note_to_play),
+//		.duration(duration_for_note),
+//		.new_note(new_note)
+//   );
+
+		song_reader song_reader(
 		.clk(clk),
 		.reset(reset | reset_player),
 		.play(play),
-		.player_ready(player_ready),
+		.player_available(player_ready),
 		.song(current_song),
 		.beat(beat),
 		.song_done(song_done),
@@ -79,7 +91,6 @@ module music_player(
 		.duration(duration_for_note),
 		.new_note(new_note)
    );
-
 //
 //  ****************************************************************************
 //      Chords Module

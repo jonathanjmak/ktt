@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/afs/ir.stanford.edu/class/ee108/groups/01/Final_Project/chords_tb.v" Line 17: Port <arg fmt="%s" index="1">player_ready</arg> is not connected to this instance
+</msg>
+
 </messages>
 

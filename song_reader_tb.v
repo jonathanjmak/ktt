@@ -6,24 +6,24 @@ module song_reader_tb();
 	wire [5:0] note;
 	wire [5:0] duration;
 	wire song_done, new_note;
-	reg player_ready;
+	reg player_available;
 
-	song_reader dut(
-		.clk(clk),
-		.reset(reset),
-		.play(play),
-		.player_ready(player_ready),
-		.song(song),
+	song_reader dut(.clk(clk),
+	        .reset(reset),
+	        .play(play),
+		.player_available(player_available),
+	        .song(song),
 		.beat(beat),
-		.song_done(song_done),
+        	.song_done(song_done),
 		.note(note),
-		.duration(duration),
-		.new_note(new_note)
-   );
+        	.duration(duration),
+    	  	.new_note(new_note)
+    	);
+
 
 	// Clock and reset
 	initial begin
-       	clk = 1'b0;
+       		clk = 1'b0;
         	reset = 1'b1;
         	repeat (4) #1 clk = ~clk;
         	reset = 1'b0;
@@ -32,7 +32,7 @@ module song_reader_tb();
 
 	initial begin
 		forever begin 
-        	#1 
+        		#1 
 			beat = 1'b1;
 			#31
 			beat = 1'b0;
@@ -41,10 +41,10 @@ module song_reader_tb();
 
 	initial begin
 		forever begin 
-        	#1 
-			player_ready = 1'b1;
+        		#1 
+			player_available = 1'b1;
 			#7
-			player_ready = 1'b0;
+			player_available = 1'b0;
 		end
 	end
 
